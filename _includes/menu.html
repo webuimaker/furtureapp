@@ -1,0 +1,30 @@
+<div class="container"> 
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent rounded w-100 menu-list">
+            <a class="navbar-brand" href="/"><img src="{{site.logo | relative_ulr }}" alt="{{site.title}}"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample09">
+                <ul class="navbar-nav ml-auto">
+                    {% for item in site.data.menu.main %}
+                        {% if item.child %}
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="{{ item.url }}" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ item.name }}</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdown09">
+                                    {% for childitem in item.child  %}
+                                        <a class="dropdown-item" href="{{ childitem.url }}">{{ childitem.name }}</a>
+                                    {% endfor %}
+                                </div>
+                            </li>
+                            {% else %}
+                            <li class="nav-item {% if item.url == page.url %} active {% endif %} {% if item.border %} bod-left {% endif %}{% if item.button %} btn btn-light {% endif %}">
+                                <a href="{{ item.url }}" class="nav-link">{{ item.name }}</a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+      </nav>
+    </div>    
+</div>

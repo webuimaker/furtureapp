@@ -1,0 +1,21 @@
+{% assign testi = site.home.testimonials %}
+{% if testi.enabled %}
+<section class="section control bg-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="sec-heading">  
+                    <h6>{{testi.badgeTitle}}</h6>                  
+                    <h2>{{testi.title}}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <!-- <img src="assets/images/control-card.png" alt=""> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endif %}

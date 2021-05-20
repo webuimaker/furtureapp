@@ -1,0 +1,33 @@
+main:
+  - name: Home                                             
+    url: /
+    weight: 1
+  - name: Why Us
+    url: /#why
+    weight: 2
+  - name: How its Works
+    url: /#how
+    weight: 3
+  - name: About Us
+    url: /#about
+    weight: 4
+  - name: More
+    url: /
+    weight: 5
+    child:
+    - name: "link1"
+      url: "/"
+    - name: "link2"
+      url: "/"
+    - name: "link3"
+      url: "/"
+  - name: Log In
+    url: '/log'
+    weight: 6
+    border: true
+  - name: Join Us
+    url: '/join'
+    weight: 7
+    button: true
+
+

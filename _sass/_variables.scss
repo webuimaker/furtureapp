@@ -1,0 +1,52 @@
+
+//
+// VARIABLES
+//
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+
+
+// Variables from logo
+$primary: #333e98;
+$secondary: #ec3c94;
+$helping: #ffc321;
+
+
+// Grays
+$black: #000;
+$darkerGray: #181818;
+$darkGray: #333;
+
+$gray: #808080;
+$lightGray: #f8f8f8;
+$white: #fff;
+
+
+$font-family-base: 'Raleway', Arial, sans-serif, -apple-system;
+$font-family-heading: 'Montserrat', sans-serif, Arial, sans-serif, -apple-system;
+$font-size-base: 1rem;
+
+
+
+// Font Awesome
+$fa-font-path: '../fonts/fontawesome-free-5.15.2-web/webfonts';
+@import 'libraries/fontawesome5/fontawesome.scss';
+@import 'libraries/fontawesome5/solid.scss';
+@import 'libraries/fontawesome5/brands.scss';
+// @import 'libraries/fontawesome5/brands.scss';
+
+// Mobile breakpoints
+@mixin mobile {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}
+
+// ipad breakpoints
+@mixin ipad {
+  @media screen and (max-width:1023px) {
+    @content;
+  }
+}
+

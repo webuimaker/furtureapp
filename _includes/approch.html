@@ -1,0 +1,42 @@
+{% assign approchsec = site.home.approch %}
+
+{% if approchsec.enabled %}
+    <section class="section approch bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center mb-5">
+                    <div class="sec-heading ">                    
+                        <h2>{{approchsec.heading}}</h2>
+                        {% if approchsec.subHeading %}
+                            <h3>{{approchsec.subHeading}}</h3>
+                        {% endif %}
+                        
+                        {% if approchsec.smallHeading %}
+                            <h5>{{approchsec.smallHeading}}</h5>
+                        {% endif %}
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                {% for infos in approchsec.info %}
+                    <div class="col-md-6 text-center approch-box">
+                        <div class="bg-heading">{{infos.title}}</div>
+                        <div class="icon">
+                            <img src="{{infos.icon}}" alt="{{infos.title}}" >
+                        </div>  
+                        <div class="image">
+                            <img src="{{infos.image}}" alt="{{infos.title}}" >
+                        </div>
+                        <p>{{infos.text}}</p>
+
+                    </div>
+
+                {% endfor %}
+
+            </div>
+
+
+        </div>
+    </section>
+{% endif %}

@@ -1,0 +1,31 @@
+{% assign client = site.home.clients %}
+{% if client.enabled %}
+<section class="section clients">
+    <div class="container">        
+        <div class="col-md-12 text-center">
+            <div class="sec-heading">  
+                <h6>{{client.badgeTitle}}</h6>                  
+                <h2>{{client.title}}</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <section class="customer-logos slider">
+                    {% for  client in  site.data.clients %}
+                        <div class="slide">
+                            <a href="{{ client.url }}">
+                                <img src="{{ client.logo }}" class="cld-responsive" alt="{{ client.name }}">                               
+                            </a>
+                        </div>
+                        
+                    {% endfor %}
+
+                </section>
+
+                          
+            </div>
+        </div>
+  </div>
+</section>
+
+{% endif %}

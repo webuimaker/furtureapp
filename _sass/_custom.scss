@@ -1,0 +1,138 @@
+body {
+  &.thanks {
+    #main-content {
+      h2 {font-size: 26px;}
+      h3 {font-size: 24px;}
+    }
+  }
+}
+
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 5px;
+  padding: 5px;  
+}
+
+
+// subscriptions
+$email-input-font-size: 20px;
+$email-input-height: 60px;
+#mc_embed_signup {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 10px 10px 40px;
+  margin: 10px auto;
+
+
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    padding-top: 0;
+  }
+
+  h3 {
+    text-align: center;
+    font-weight: normal;
+    max-width: 600px;
+    display: inline-block;
+    margin-bottom: 25px;
+    line-height: 1.2em;
+    margin-top: -5px;
+  }
+
+  .email-input-style {
+    height: $email-input-height;
+    width: 95%;
+    text-align: center;
+    font-size: $email-input-font-size;
+
+    @media only screen and (max-width: 768px) {
+      font-size: $email-input-font-size * .75;
+    }
+
+    @media only screen and (max-width: 440px) {
+      font-size: $email-input-font-size * .7;
+    }
+
+  }
+
+  .mc-field-group {
+    width: 33%;
+    float: left;
+
+    input {
+      @extend .email-input-style;
+    }
+  }
+
+  input[type="submit"] {
+    @extend .email-input-style;
+    height: $email-input-height;
+    width: 33%;
+    padding: 1px;
+    text-transform: uppercase;
+    border-radius: initial;
+    border: none;
+    background-color: $blue;
+
+    &:hover {
+      cursor: pointer;
+      background-color: darken($blue, 3%);
+      color: #f5f5f5;
+    }
+    &:active {
+      cursor: pointer;
+      background-color: darken($blue, 5%);
+      color: #f5f5f5;
+    }
+
+  }
+}
+
+$small-screen-logo-size: 40px;
+$small-screen-h1-size: 23px;
+$small-screen-h2-size: 20px;
+$small-screen-h3-size: 18px;
+@media only screen and (max-width: 640px) {
+  .site-info {padding-right: 0;}
+  .site-avatar {
+    height: $small-screen-logo-size;
+    width: $small-screen-logo-size;
+  }
+  .site-name {font-size: $small-screen-h1-size;}
+  .masthead {padding: 5px 0;}
+
+  // post styling
+  article.post {
+    h1 {font-size: $small-screen-h1-size;}
+    h2 {font-size: $small-screen-h2-size;}
+    h3 {font-size: $small-screen-h3-size;}
+    .entry {padding: 0 10px;}
+
+    img {
+      max-width: 112%;
+      margin-left: -6%;
+
+      &.img-left, &.img-right {
+        max-width: 100%;
+        width: inherit;
+      }
+
+      &.img-left {margin: 0 10px 10px 0;}
+      &.img-right {margin: 0 0 10px 10px;}
+    }
+
+  }
+
+  .post blockquote {font-size: $small-screen-h3-size - 2px;}
+
+  // email subscription form
+  #mc_embed_signup {
+    padding: 10px 25px;
+    width: 112%;
+    max-width: 112%;
+    margin-left: -6%;
+    h2 {font-size: $small-screen-h2-size;}
+    h3 {font-size: $small-screen-h3-size;}
+  }
+
+}

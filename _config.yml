@@ -1,0 +1,93 @@
+baseurl: ''
+exclude: ['README.md']
+permalink: pretty
+title: 'Future App'
+logo: "assets/images/logo.png"
+markdown: kramdown
+
+sass:
+  sass_dir: _sass
+  style: compact # possible values: nested expanded compact compressed
+
+# Your disqus shortname, entering this will enable commenting on posts
+disqus: ""
+
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+google_analytics: ""
+
+home:
+  top-bar: 
+    enabled: true
+    left: "<strong><a href='#' >Now Hiring:</a></strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed."
+    right: 
+    - icon: "fa fa-phone"
+      title: "<strong>0122 8899900</strong>"
+      link: "tel:01228899900"
+    - icon: "fa fa-map-marker-alt"
+      title: "Ahmedabad, Gujarat, 382481"
+      link: 
+  hero:
+    image: "assets/images/banner.jpg"
+    title:
+    button:
+    - text:
+      url:
+      image:
+    - text:
+      url:
+      image:
+  about:
+    enabled: true
+    heading: "About Us"
+    subHeading: "Connecting schools and  parents via technology to make your <span>child's future</span>"
+    text: "<p>FutureApp allows parents to stay updated about their kids progress. At the same time it helps school management to make routine work automated and easy</p> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
+    image: "assets/images/about.png"
+  approch:
+    enabled: true
+    heading: "approch"
+    smallHeading: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    info: 
+    - title: TRADITIONAL APPROACH
+      icon: "assets/images/arrow.png"
+      image:  "assets/images/traditional.png"
+      text: "FutureApp allows parents to stay <br> updated about their kids progress."
+    - title: Schoollog Way
+      icon: "assets/images/blub.png"
+      image: "assets/images/school-way.png"
+      text: "At the same time it helps school management <br> to make routine work automated and easy"
+  counter:
+    enabled: true
+    title: "Counter"
+    image: "assets/images/counter.jpg"
+  ecosystem:
+    enabled: true
+    title: "The Ecosystem of Apps"
+  control:
+    enabled: true
+    title: "Take control of your school online"
+  testimonials:
+    enabled: true
+    title: "What do people praise about  <span>FutureApp?</span>"
+    badgeTitle: "Testimonials"
+  clients:
+    enabled: true
+    title: "We see our success in your client <span>satisfaction</span>."
+    badgeTitle: "Our Clients"
+    
+    
+
+
+
+# Use the following plug-ins
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
+
+
+
+# Exclude these files from your production _site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
