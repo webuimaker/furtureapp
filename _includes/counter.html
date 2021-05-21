@@ -1,7 +1,30 @@
 {% assign countersec = site.home.counter %}
 {% if countersec.enabled %}
-<section class="section counter bgcover" style="background-image: url({{countersec.image}});">
-  
-</section>
+
+
+    <!--FUN FACT AREA AREA-->
+    <section class="fun-fact-area center text-white relative section  bgcover" id="fact" style="background-image: url({{countersec.image}});">
+        <div class="area-bg" data-stellar-background-ratio="0.6"></div>
+        <div class="container">
+            <div class="row">
+                {%  for counter in  countersec.lists %}
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="single-fun-fact">
+                            <div class="icon">
+                                <img src="{{counter.icon}}" alt="{{counter.title}}">
+                            </div>
+                            <h3 class=""><span class="counter">{{counter.number}}</span> {{counter.afternumber}}</h3>
+                            <p class="">{{counter.title}}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!--FUN FACT AREA AREA END-->
+
+
+
+
 
 {% endif %}

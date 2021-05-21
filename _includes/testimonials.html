@@ -4,16 +4,42 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <div class="sec-heading">  
+                <div class="sec-heading2">  
                     <h6>{{testi.badgeTitle}}</h6>                  
                     <h2>{{testi.title}}</h2>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <!-- <img src="assets/images/control-card.png" alt=""> -->
+        <div class="row" id="testi">
+            {% for testi in site.data.testimonial %}
+
+
+            <div class="col-md-6">
+
+                <div class="testimonial-slider">
+
+                    <div class="testimonial-slider--info">
+                        <div class="testimonial-slider__media">
+                            <img src="{{testi.image}}" class="img-fluid" alt="{{testi.name}}">
+                        </div>
+
+                        <div class="testimonial-slider__author">
+                            
+                            <div class="author-info">
+                                <h6 class="name">{{testi.name}}</h6>
+                                <span class="designation">{{testi.pos}}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slider__text">{{testi.text}}</div>
+
+                </div>
             </div>
+
+            {% endfor %}
+
+            
         </div>
     </div>
 </section>

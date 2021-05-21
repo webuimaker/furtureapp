@@ -12,9 +12,44 @@
             </div>
             <div class="col-md-6">
                 <div class="video-icon" >
-                    <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=up68UAfH0d0"><i class="fas fa-play"></i></a>
+                    <a class="popup-video btn-icon" href="{{aboutsec.videoUrl}}" data-toggle="modal" data-src="{{aboutsec.videoUrl}}" data-target="#myModal"><i class="fas fa-play"></i></a>
                 </div>
                 <img src="{{aboutsec.image}}" alt="{{aboutsec.heading}}" class="img-fluid">
+
+      
+
+
+  
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+  
+        
+        <div class="modal-body">
+  
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>        
+          <!-- 16:9 aspect ratio -->
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="{{aboutsec.videoUrl}}" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+  </div>
+          
+
+  
+          
+        </div>
+  
+      </div>
+    </div>
+  </div> 
+    
+    
+    
+                
+                
+                
                 <div class="rv-video-section d-none">
 
                     <div class="ht-banner">

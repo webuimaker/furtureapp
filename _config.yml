@@ -3,6 +3,7 @@ exclude: ['README.md']
 permalink: pretty
 title: 'Future App'
 logo: "assets/images/logo.png"
+
 markdown: kramdown
 
 sass:
@@ -42,6 +43,8 @@ home:
     subHeading: "Connecting schools and  parents via technology to make your <span>child's future</span>"
     text: "<p>FutureApp allows parents to stay updated about their kids progress. At the same time it helps school management to make routine work automated and easy</p> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
     image: "assets/images/about.png"
+    videoUrl: "https://www.youtube.com/embed/HUKlKYzCdaI" 
+    ## 
   approch:
     enabled: true
     heading: "approch"
@@ -58,7 +61,24 @@ home:
   counter:
     enabled: true
     title: "Counter"
-    image: "assets/images/counter.jpg"
+    image: "assets/images/counter-bg.jpg"
+    lists:
+    - icon: "assets/images/scucceful.png"
+      number: 20 
+      afternumber: "+"
+      title: Successful Years
+    - icon: "assets/images/happy.png"
+      number: 1300
+      afternumber: "+"
+      title: Happy Clients
+    - icon: "assets/images/satisfaction.png"
+      number: 99
+      afternumber: "%"
+      title: Customer Satiscfaction
+    - icon: "assets/images/review.png"
+      number: 1000
+      afternumber: "+"
+      title: Google Reviews
   ecosystem:
     enabled: true
     title: "The Ecosystem of Apps"
@@ -80,14 +100,13 @@ home:
 
 # Use the following plug-ins
 gems:
-  - jekyll-sitemap
-  - jekyll-paginate
+- jekyll-sitemap
+- jekyll-paginate
 
 
 
 # Exclude these files from your production _site
 exclude:
-  - Gemfile
   - Gemfile.lock
   - LICENSE
   - README.md
