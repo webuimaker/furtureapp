@@ -3188,4 +3188,38 @@ a:hover { color: #333e98; text-decoration: none; }
 
 .slick-dots li.slick-active { background: #333e98; }
 
+.contact { background-color: #333e98; background-image: url(/assets/images/map.png); background-repeat: no-repeat; background-size: contain; background-position: center; }
+
+.formBox { color: #fff; }
+
+.formBox .form-group { color: #fff; }
+
+.formBox .form-group label { display: block; font-size: 14px; }
+
+.formBox .form-group label span { color: #ffc321; font-size: 20px; }
+
+.formBox .form-group .input { width: 100%; background: transparent; border: 2px solid #fff; border-radius: 6px; outline: none; height: 50px; color: #fff; padding: 10px; font-size: 14px; }
+
+.formBox .form-group textarea.input { height: auto; }
+
+.formBox .input[type="checkbox"] { width: 16px; height: 16px; border: 2px solid #fff; background: transparent !important; color: transparent !important; border-radius: 4px; }
+
+.font-sm { font-size: 13px; }
+
+.btn-submit { background: transparent; border: 2px solid #fff; border-radius: 6px; color: #fff; padding: 8px 20px; }
+
+.btn-submit:hover { background: #fff; color: #333e98; }
+
+.contact-info { margin-bottom: 15px; }
+
+.contact-info h3 { color: #fff; font-size: 22px; font-weight: 600; margin-bottom: 8px; }
+
+.contact-info .lists { color: #fff; }
+
+.contact-info .lists span { margin-left: 10px; }
+
+.contact-info .lists li a { color: #fff; }
+
+.contact-info .lists li a:hover { color: #ffc321; }
+
 /*# sourceMappingURL=style.css.map */

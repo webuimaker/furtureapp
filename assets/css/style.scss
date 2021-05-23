@@ -438,4 +438,90 @@ opacity:1;
   }
 }
 
+.contact{
+  background-color: $primary;
+  background-image: url(/assets/images/map.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.formBox{
+  color: $white;
+  .form-group{
+    color: $white;
+    label{
+      display: block;
+      font-size: 14px;
+      span{
+        color: $helping;
+        font-size: 20px;
+      }
+    }
+    .input{
+      width: 100%;
+      background: transparent;
+      border: 2px solid #fff;
+      border-radius: 6px;
+      outline: none;
+      height: 50px;
+      color: #fff;
+      padding: 10px;
+      font-size: 14px;
+    }
+    textarea.input{
+      height: auto;
+    }
+  }
+  .input[type="checkbox"]{
+    width: 16px;
+    height: 16px;
+    border: 2px solid #fff;
+    background: transparent !important;
+    color: transparent !important;
+    border-radius: 4px;
+  }
+}
+
+.font-sm{
+  font-size: 13px;
+}
+
+.btn-submit{
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  color: #fff;
+  padding: 8px 20px;
+  &:hover{
+    background: $white;
+    color: $primary;
+
+  }
+}
+.contact-info{
+  margin-bottom: 15px;
+  h3{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .lists{
+    color: #fff;
+
+    span{
+      margin-left: 10px;
+    }
+    li{
+      a{
+        color: $white;
+
+        &:hover{
+          color: $helping;
+        }
+      }
+    }
+  }
+}
 

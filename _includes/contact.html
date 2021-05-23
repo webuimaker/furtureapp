@@ -1,13 +1,140 @@
-<section class="section approch">
+{% assign conact = site.home.contact %}
+{% if conact.enabled %}
+<section class="section contact">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <div class="sec-heading">                    
-                    <h2>{{aboutsec.heading}}</h2>
-                    <h3>{{aboutsec.subHeading}}</h3>
+            <div class="col-md-12 text-center mb-5">
+                <div class="sec-heading2">  
+                    <h6 class="text-white">{{conact.badgeTitle}}</h6>                  
+                    <h2 class="text-white">{{conact.title}}</h2>
                 </div>
-                {{aboutsec.text}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 col-sm-12">
+                <div class="contact-info">
+                    <h3>Address:</h3>
+                    <ul class="lists">
+                        <li>
+                            <i class="fa fa-map-marker"></i> <span>{{site.address}}</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-info">
+                    <h3>Phone:</h3>
+                    <ul class="lists">
+                        <li>
+                            <i class="fa fa-phone-square"></i> <span>{{site.phone}}</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Email:</h3>
+                    <ul class="lists">
+                        <li>
+                            <a href="mailto:{{site.email}}"><i class="fa fa-envelope-square"></i> <span>{{site.email}}</span></a>  
+                         
+                        </li>
+                    </ul>
+                </div>
+                
+                
+                <div class="contact-info">
+                    <h3>Social Media:</h3>
+                    <ul class="lists">
+                        {% for social in site.social %}
+                            <li>
+                                <a href="mailto:{{site.link}}"><i class="{{social.icon}}"></i> <span>{{social.title}}</span></a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                
+                <div class="contact-info">
+                    <h3>Download:</h3>
+                        {% for social in site.apps %}
+                            <a href="{{social.link}}"><img src="{{social.icon}}"  class="{{social.icon}}"></i></a>
+                           
+                        {% endfor %}
+                    
+                </div>
+            </div>
+            
+            <div class="col-md-7 col-sm-12">
+                <div class="formBox">
+                    <form class="w-100">
+    
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group ">
+                                        <label for="fname">First Name <span>*</span></label>
+                                        <input type="text" name="fname" class="input" required>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-sm-6">
+                                    <div class="form-group ">
+                                        <label for="lname">Last Name <span>*</span></label>
+                                        <input type="text" name="lname" class="input" required>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-sm-6">
+                                    <div class="form-group ">
+                                        <label for="email">Email <span>*</span></label>
+                                        <input type="email" name="email" class="input" required>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-sm-6">
+                                    <div class="form-group ">
+                                        <label for="school">School <span>*</span></label>
+                                        <input type="text" name="school" class="input" required>
+                                    </div>
+                                </div>
+    
+                            </div>
+    
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label for="school">Mesage <span>*</span></label>
+                                        <textarea name="mesage" rows="6" class="input" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p class="font-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                </div>
+                            </div>
+
+                            
+                            <div class="row mb-3">
+                                <div class="col-sm-12">
+                                    <input type="checkbox" name="agree" class="input" id="agree" required>
+                                    <label for="agree" class="font-sm">I agree to receive other communications from fututreapp. <span>*</span></label>
+                                    
+                                </div>
+                            </div>
+    
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <input type="submit" name="" class="btn btn-submit" value="Send Message">
+                                </div>
+                            </div>
+                    </form>
+                </div>
+                
             </div>
         </div>
     </div>
 </section>
+
+{% endif %}

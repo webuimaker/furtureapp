@@ -3,6 +3,27 @@ exclude: ['README.md']
 permalink: pretty
 title: 'Future App'
 logo: "assets/images/logo.png"
+address: "Ahmedabad, Gujarat, 382481"
+phone: "+91 9601412598"
+email: "thesiliconvalleyacademy@gmail.com"
+social:
+- icon: "fab  fa-facebook-square"
+  title: "facebook"
+  link: "thesiliconvalleyacademy@gmail.com"
+- icon: "fab fa-twitter-square"
+  title: "twitter"
+  link: "thesiliconvalleyacademy@gmail.com"
+- icon: "fab fa-skype"
+  title: "skype"
+  link: "thesiliconvalleyacademy@gmail.com"
+apps:
+- link: "#" 
+  icon: "/assets/images/googleplay-white.jpg"
+  title: "google play"
+- link: "#" 
+  icon: "/assets/images/appstore-white.jpg"
+  title: "app store"
+
 
 markdown: kramdown
 
@@ -43,7 +64,7 @@ home:
     subHeading: "Connecting schools and  parents via technology to make your <span>child's future</span>"
     text: "<p>FutureApp allows parents to stay updated about their kids progress. At the same time it helps school management to make routine work automated and easy</p> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
     image: "assets/images/about.png"
-    videoUrl: "https://www.youtube.com/embed/HUKlKYzCdaI" 
+    videoUrl: "https://www.youtube.com/embed/pcj1XNnABak"  
     ## 
   approch:
     enabled: true
@@ -54,7 +75,7 @@ home:
       icon: "assets/images/arrow.png"
       image:  "assets/images/traditional.png"
       text: "FutureApp allows parents to stay <br> updated about their kids progress."
-    - title: Schoollog Way
+    - title: future app AI
       icon: "assets/images/blub.png"
       image: "assets/images/school-way.png"
       text: "At the same time it helps school management <br> to make routine work automated and easy"
@@ -93,6 +114,10 @@ home:
     enabled: true
     title: "We see our success in your client <span>satisfaction</span>."
     badgeTitle: "Our Clients"
+  contact:
+    enabled: true
+    title: "We'd love to hear from you"
+    badgeTitle: "Get IN Touch"
     
     
 
