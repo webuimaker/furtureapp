@@ -1,13 +1,27 @@
-<section class="section approch">
-    <div class="container">
+{% assign help = site.home.help %}
+{% if help.enabled %}
+
+<section class="section help pb-0">
+    <div class="container">        
         <div class="row">
-            <div class="col-md-6">
-                <div class="sec-heading">                    
-                    <h2>{{aboutsec.heading}}</h2>
-                    <h3>{{aboutsec.subHeading}}</h3>
+            <div class="col-md-12 text-center mb-5">
+                <div class="sec-heading2">  
+                    <h6 class="">{{help.badgeTitle}}</h6>                  
+                    <h2 class="">{{help.title}}</h2>
                 </div>
-                {{aboutsec.text}}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <p class="mb-4 text-center">{{help.info}}</p>
+                <div class="text-center">
+                    <img src="{{help.image}}" alt="{{help.title}}" class="img-fluid">
+                </div>
+                
             </div>
         </div>
     </div>
 </section>
+
+{% endif %}

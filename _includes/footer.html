@@ -1,4 +1,34 @@
+{% assign foot = site.footer %}
+<footer class="footer py-5">
 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-sm-12 leftcol">
+          <img src="{{foot.logo}}" alt="{{site.title}}" class="img-fluid">
+          <p class="mb-4">© 2021 {{ site.title }}. {{foot.copyright}}.</p>
+          <ul class="foot-link list-inline">
+            {% for leftlinks in foot.leftcol %}
+              <li class="list-inline-item"><a href="{{leftlinks.link}}">{{leftlinks.text}}</a></li>
+            {% endfor %}
+          </ul>
+      </div>
+      <div class="col-md-3 col-sm-12">
+        <h3>{{ foot.centercolHeading }}</h3>  
+        <ul class="foot-link">      
+          {% for leftlinks in foot.centercol %}
+            <li><a href="{{leftlinks.link}}">{{leftlinks.text}}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="col-md-4 col-sm-12">        
+        <h3>{{ foot.rightcolHeading }}</h3>        
+       <p class="mb-4">{{ foot.rightcol.text }}</p>
+       <a href="{{foot.rightcol.btnurl}}" class="btn btn-helping">{{foot.rightcol.btntext}}</a>
+      </div>
+    </div>
+  </div>
+
+</footer>
     
     {% include script.html %}
   </body>

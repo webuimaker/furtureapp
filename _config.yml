@@ -118,8 +118,41 @@ home:
     enabled: true
     title: "We'd love to hear from you"
     badgeTitle: "Get IN Touch"
+  help:
+    enabled: true
+    title: "Help whenever you need it"
+    badgeTitle: "Help"
+    info: "Our support team is available 24/7 via live chat, phone and email. Whether you need help updating your menu,<br> want to run a new marketing campaign or have a product question, we’re always here to help."
+    image: "assets/images/help.png"
+
+  
     
-    
+footer:
+  logo: "assets/images/white-logo.png"
+  copyright: All Rights Reserved
+  leftcolHeading: 
+  centercolHeading:  "Useful Links"
+  rightcolHeading: "We're Hiring I!"
+  leftcol:
+  - link: "#"
+    text: Terms of Use
+  - link: "#"
+    text: Privacy Policy
+  centercol:
+  - link: "#"
+    text: Why us
+  - link: "#"
+    text: How it works
+  - link: "#"
+    text: About US 
+  - link: "#"
+    text: Contact Us
+  - link: "#"
+    text: Pricing
+  rightcol:
+    text: We’re more interested in you. let's grow together
+    btntext: "Register Now" 
+    btnurl: "#" 
 
 
 
