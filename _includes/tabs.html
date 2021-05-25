@@ -1,4 +1,7 @@
 {% assign echo = site.home.ecosystem %}
+{% assign echoData = site.data.ecosystem %}
+
+
 {% if echo.enabled %}
 <section class="section echosystem bg-gray">
     <div class="container">
@@ -11,10 +14,62 @@
         </div>
         <div class="row">
             <div class="col-md-12">
+                <div class="tabbable boxed parentTabs p-4">
+                    <ul class="nav nav-tabs nested">
+                        {% for tabs in echoData %}
+                            <li><a href='#{{tabs.tabName | downcase | remove: " " }}' class="nav-link {% if  forloop.index == 1 %}active{% endif %}">{{tabs.tabName  }} </a></li>
+                        {% endfor %}
+                    </ul>
+                    <div class="tab-content">
+                        {% for tabs in echoData %}
+                            <div class="tab-pane fade {% if  forloop.index == 1 %}active show{% endif %}" id='{{tabs.tabName | downcase | remove: " " }}'>
+                                <div class="tabbable">
+                                    {% if tabs.child %} 
+                                        <div class="row">
+                                            <div class="col-md-3 tab-left">                                                                                  
+                                                <ul class="nav nav-tabs d-block pt-4 vertical">
+                                                    {% for childtab in tabs.child %}
+                                                        <li><a href="#{{childtab.name | downcase | remove: " " }}" class="nav-link {% if  forloop.index == 1 %}active{% endif %}"><span class="icon"><i class="{{childtab.icon}}"></i></span>{{childtab.name }}</a></li>
+                                                    {% endfor %}
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-9 ">                                             
+                                                <div class="tab-content pt-4">
+                                                    {% for childtab in tabs.child %}
+                                                        <div class="tab-pane pl-4 fade {% if  forloop.index == 1 %}active show{% endif %}" id="{{childtab.name | downcase | remove: " " }}">
+                                                            <h3>{{childtab.heading}}</h3>
+                                                            <p>{{childtab.description}}</p>
+                                                            <div class="row">
+                                                                <div class="col-md-5">
+                                                                    <img src="{{childtab.image | relative_url}}" alt="{{childtab.name}}" class="img-fluid">
+                                                                </div>
+                                                                <div class="col-md-7">
+                                                                    <p>{{childtab.content}}</p>
+
+                                                                    <a href="{{childtab.btnUrl}}" class="btn btn-border" target="{% if childtab.btnNewWindow %} _blank {% endif %}">{{childtab.btntext}}</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    {% endfor %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% else %}
+                                        <div class="pt-4">
+                                            <h3>{{tabs.heading}}</h3>
+                                        </div>
+
+                                    {% endif %}
+
+                                    
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
 
             </div>
         </div>
     </div>
 </section>
-
 {% endif %}

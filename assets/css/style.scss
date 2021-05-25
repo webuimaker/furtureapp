@@ -499,6 +499,18 @@ opacity:1;
 
   }
 }
+
+.btn-border{
+  @extend .btn-submit;
+  color: $primary;
+  border-color: $primary;
+
+  &:hover{
+    
+    background: $primary;
+    color: $white;
+  }
+}
 .contact-info{
   margin-bottom: 15px;
   h3{
@@ -559,3 +571,99 @@ footer{
   }
 }
 
+.nav-tabs{
+  &.nested li{  
+    a{
+      border: 0px;
+      background-color: transparent;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 600;
+      color: #5d5d5d;
+      position: relative;
+      padding: 8px 25px;
+  
+      &:hover, &.active{
+        border: 0px;
+        background-color: transparent;
+        color: #333e98;
+        border-bottom: 1px solid #333e98;
+  
+        &::before{
+          content: "\f107";
+          height: 20px;
+          font-family: fontawesome;
+          margin: 0 auto;
+          color: #333e98;
+          font-size: 25px;
+          position: absolute;
+          left: 0px;
+          right: 0px;
+          bottom: -1px;
+          width: 20px;
+        }
+      }
+    }
+  
+  } 
+
+  &.vertical{
+    border: 0px;
+    li{
+      a{
+        border: 0px;
+        background-color: transparent;
+        font-size: 16px;
+        color: #5d5d5d;
+        position: relative;
+        padding-left: 0px;
+        .icon{
+          margin-right: 10px;
+        }
+
+        &:hover, &.active{
+          border: 0px;
+          background-color: transparent;
+          color: #060606;
+          // border-right: 1px solid #333e98;
+
+          &::before{
+            height: 100%;
+            content: "\f0d9";
+            position: absolute;
+            right: -17px;
+            margin: auto;
+            top: 0px;
+            bottom: 0px;
+            font-family: fontawesome;
+            border-right: 1px solid #333e98;
+            text-align: center;
+            line-height: 2.8em;
+          }
+        }
+        &.active{font-weight: 600;}
+    
+
+      }
+    }
+
+  }
+  
+
+}
+
+.tab-left{
+  border-right: 2px solid #e6e6e6;
+}
+
+
+.echosystem{
+  .parentTabs {
+    
+  h3{
+    font-size: 32px;
+
+  }
+    
+  }
+}
