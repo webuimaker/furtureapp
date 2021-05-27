@@ -8,6 +8,8 @@
 
 @import "_reset";
 @import "_variables";
+@import "_hero";
+
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -136,7 +138,7 @@ a:hover{
 
 .hero{
   background: #212c86;
-  height: 745px;
+  // height: 745px;
 }
 
 .section{
