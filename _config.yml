@@ -69,7 +69,7 @@ home:
   approch:
     enabled: true
     heading: "approch"
-    smallHeading: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    smallHeading: "" // put text for header below
     info: 
     - title: TRADITIONAL APPROACH
       icon: "assets/images/arrow.png"
