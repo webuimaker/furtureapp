@@ -29,6 +29,57 @@
 <script>
 
 
+
+
+$('#playerID').click(function(){
+    var videoURL = $('#VdoID').attr('src'),
+    dataplay = $('#VdoID').attr('data-play');
+
+    //for check autoplay
+    //if not set autoplay=1
+    if(dataplay == 0 ){
+        $('#VdoID').attr('src',videoURL+'?autoplay=1');
+        $('#VdoID').attr('data-play',1);
+     }
+     else{
+        var videoURL = $('#VdoID').attr('src');
+        videoURL = videoURL.replace("?autoplay=1", "");
+        $('#VdoID').prop('src','');
+        $('#VdoID').prop('src',videoURL);
+
+        $('#VdoID').attr('data-play',0);
+     }
+
+});
+
+
+$(function () {
+  $('#contact-form').on('submit', function (e) {
+   if (!e.isDefaultPrevented()) {
+    var url = "https://future-apps.thesiliconvalleyacademy.com/subscriptions";
+
+    $.ajax({
+     type: "POST",
+     url: url,
+     contentType: 'application/x-www-form-urlencoded',
+     data: $(this).serialize(),
+     success: function (data) {
+      var messageAlert = 'alert-' + data.type;
+      var messageText = data.message;
+      var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+      if (messageAlert && messageText) {
+       $('#contact-form').find('.messages').html(alertBox);
+       $('#contact-form')[0].reset();
+      }
+     }
+    });
+    return false;
+
+   }
+  })
+});
+
+
 $(document).ready(function(){
         
         $('.customer-logos').slick({

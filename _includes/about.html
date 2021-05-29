@@ -11,83 +11,21 @@
                 {{aboutsec.text}}
             </div>
             <div class="col-md-6">
-                <div class="video-icon" >
-                    <a class="popup-video btn-icon" href="{{aboutsec.videoUrl}}" data-toggle="modal" data-src="{{aboutsec.videoUrl}}" data-target="#myModal"><i class="fas fa-play"></i></a>
-                </div>
-                <img src="{{aboutsec.image}}" alt="{{aboutsec.heading}}" class="img-fluid">
+                <!-- <div class="video-icon" >
+                    <a class="popup-video btn-icon"  id="playerID" ><i class="fas fa-play"></i></a>
+                </div> -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="{{aboutsec.videoUrl}}" id="VdoID" aria-controls="0"  allowscriptaccess="always" allow="autoplay"></iframe>
+                  </div>
+                <!-- <img src="{{aboutsec.image}}" alt="{{aboutsec.heading}}" class="img-fluid"> -->
 
       
 
-
-  
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-  
-        
-        <div class="modal-body">
-  
-         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>        
-          <!-- 16:9 aspect ratio -->
-  <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="{{aboutsec.videoUrl}}" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
-  </div>
-          
-
-  
-          
-        </div>
-  
-      </div>
-    </div>
-  </div> 
     
     
     
                 
                 
-                
-                <div class="rv-video-section d-none">
-
-                    <div class="ht-banner">
-                        <img class="img-fluid border-radus-5 animation_images one wow fadeInDown animated" src="assets/images/vimg-tl.png" alt="" style="visibility: visible; animation-name: animateUpDown;">
-                    </div>
-
-                    <div class="ht-banner">
-                        <img class="img-fluid border-radus-5 animation_images two wow fadeInDown animated" src="assets/images/vimg-tr.png" alt="" style="visibility: visible;animation-name: animateUpDown;">
-                    </div>
-
-                    <div class="main-video-box video-popup">
-                        
-                            <div class="single-popup-wrap">
-                                <img class="img-fluid border-radus-5" src="assets/images/video-img-1.png" alt="">
-                                <div class="ht-popup-video video-button">
-                                    <div class="video-mark">
-                                        <div class="wave-pulse wave-pulse-1"></div>
-                                        <div class="wave-pulse wave-pulse-2"></div>
-                                    </div>
-                                        <!-- Video icon -->
-                                        <div class="video-icon" >
-                                            <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=up68UAfH0d0"><i class="fas fa-play"></i></a>
-                                        </div>
-                                </div>
-                            </div>
-                    </div>
-
-
-                    <div class="ht-banner">
-                        <img class="img-fluid border-radus-5 animation_images three wow fadeInDown animated" src="assets/images/vimg-bl.png" alt="" style="visibility: visible; animation-name: animateUpDown;">
-                    </div>
-
-                    <div class="ht-banner">
-                        <img class="img-fluid border-radus-5 animation_images four wow fadeInDown animated" src="assets/images/vimg-br.png" alt="" style="visibility: visible; animation-name: animateUpDown;">
-                    </div>
-
-
-                </div>
             </div>
         </div>
         

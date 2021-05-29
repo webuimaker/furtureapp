@@ -1,6 +1,8 @@
 {% assign conact = site.home.contact %}
 {% if conact.enabled %}
 <section class="section contact">
+
+
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center mb-5">
@@ -11,6 +13,8 @@
             </div>
         </div>
         <div class="row">
+
+           
             <div class="col-md-5 col-sm-12">
                 <div class="contact-info">
                     <h3>Address:</h3>
@@ -63,22 +67,23 @@
             </div>
             
             <div class="col-md-7 col-sm-12">
-                <div class="formBox">
-                    <form class="w-100">
+                <div class="formBox" >
+                    <form class="w-100" action="https://future-apps.thesiliconvalleyacademy.com/subscriptions" method="post"  id="contact-form1">
+
     
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group ">
-                                        <label for="fname">First Name <span>*</span></label>
-                                        <input type="text" name="fname" class="input" required>
+                                        <label for="name">First Name <span>*</span></label>
+                                        <input type="text" name="name" class="input" required>
                                     </div>
                                 </div>
 
                                 
                                 <div class="col-sm-6">
                                     <div class="form-group ">
-                                        <label for="lname">Last Name <span>*</span></label>
-                                        <input type="text" name="lname" class="input" required>
+                                        <label for="phone_number">Phone Number <span>*</span></label>
+                                        <input type="tel" name="phone_number" class="input" required>
                                     </div>
                                 </div>
 
@@ -103,8 +108,8 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        <label for="school">Mesage <span>*</span></label>
-                                        <textarea name="mesage" rows="6" class="input" required></textarea>
+                                        <label for="message">Mesage <span>*</span></label>
+                                        <textarea name="message" rows="6" class="input" required></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -127,6 +132,15 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <input type="submit" name="" class="btn btn-submit" value="Send Message">
+                                </div>
+                            </div>
+
+
+                            <div class="row mt-3 message-submit messages" >
+                                <div class="col-sm-12">
+                                    <div class="alert alert-success" role="alert">
+                                        Thank you for contacting us – we will get back to you soon!
+                                      </div>
                                 </div>
                             </div>
                     </form>

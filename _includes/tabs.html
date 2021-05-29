@@ -15,39 +15,49 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="tabbable boxed parentTabs p-4">
-                    <ul class="nav nav-tabs nested">
+                    <ul class="nav nav-tabs nested d-flex justify-content-around">
                         {% for tabs in echoData %}
-                            <li><a href='#{{tabs.tabName | downcase | remove: " " }}' class="nav-link {% if  forloop.index == 1 %}active{% endif %}">{{tabs.tabName  }} </a></li>
+                            <li><a href='#{{tabs.tabName | downcase | remove: " " | remove: "/" }}' class="nav-link {% if  forloop.index == 1 %}active{% endif %}">{{tabs.tabName  }} </a></li>
                         {% endfor %}
                     </ul>
                     <div class="tab-content">
                         {% for tabs in echoData %}
-                            <div class="tab-pane fade {% if  forloop.index == 1 %}active show{% endif %}" id='{{tabs.tabName | downcase | remove: " " }}'>
+                            <div class="tab-pane fade {% if  forloop.index == 1 %}active show{% endif %}" id='{{tabs.tabName | downcase | remove: " "  | remove: "/" }}'>
                                 <div class="tabbable">
                                     {% if tabs.child %} 
                                         <div class="row">
                                             <div class="col-md-3 tab-left">                                                                                  
                                                 <ul class="nav nav-tabs d-block pt-4 vertical">
                                                     {% for childtab in tabs.child %}
-                                                        <li><a href="#{{childtab.name | downcase | remove: " " }}" class="nav-link {% if  forloop.index == 1 %}active{% endif %}"><span class="icon"><i class="{{childtab.icon}}"></i></span>{{childtab.name }}</a></li>
+                                                        <li><a href="#{{childtab.name | downcase | remove: " "  | remove: "/" }}" class="nav-link {% if  forloop.index == 1 %}active{% endif %}"><span class="icon"><i class="{{childtab.icon}}"></i></span>{{childtab.name }}</a></li>
                                                     {% endfor %}
                                                 </ul>
                                             </div>
                                             <div class="col-md-9 ">                                             
                                                 <div class="tab-content pt-4">
                                                     {% for childtab in tabs.child %}
-                                                        <div class="tab-pane pl-4 fade {% if  forloop.index == 1 %}active show{% endif %}" id="{{childtab.name | downcase | remove: " " }}">
+                                                        <div class="tab-pane pl-4 fade {% if  forloop.index == 1 %}active show{% endif %}" id="{{childtab.name | downcase | remove: " "  | remove: "/" }}">
                                                             <h3>{{childtab.heading}}</h3>
-                                                            <p>{{childtab.description}}</p>
-                                                            <div class="row">
-                                                                <div class="col-md-5">
+                                                            {% if childtab.description %}
+                                                                <p>{{childtab.description}}</p>
+                                                            {% endif %}
+                                                            <div class="row mt-3">
+                                                                {% if childtab.content %}
+                                                                    <div class="col-md-5">
+
+                                                                {% else %}
+                                                                <div class="col-md-8 text-center">
+
+                                                                {% endif %}
                                                                     <img src="{{childtab.image | relative_url}}" alt="{{childtab.name}}" class="img-fluid">
                                                                 </div>
+                                                                {% if childtab.content %}
                                                                 <div class="col-md-7">
                                                                     <p>{{childtab.content}}</p>
 
                                                                     <a href="{{childtab.btnUrl}}" class="btn btn-border" target="{% if childtab.btnNewWindow %} _blank {% endif %}">{{childtab.btntext}}</a>
                                                                 </div>
+                                                                {% endif %}
                                                             </div>
                                                         </div>
                                                     {% endfor %}

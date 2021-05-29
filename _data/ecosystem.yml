@@ -1,4 +1,4 @@
-- tabName: Tabs 1                                            
+- tabName: "Parent/ Student"                                          
   icon: 
   heading:
   description:
@@ -8,31 +8,131 @@
   btnUrl:
   btnNewWindow:
   child:
-   - name: "link1"                                           
-     icon: "fa fa-car"
-     heading:  Tab1 Content 2
-     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-     image: "assets/images/dash.jpg"
-     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-     btntext: Read More
-     btnUrl: "#"
-     btnNewWindow:
-   - name: "link2"                                           
-     icon: 
-     heading: link2 heading
+   - name: "Attendance Details"                                           
+     icon: ""
+     heading:  Attendance Details
      description:
-     image:
+     image: "assets/images/attendance-details.png"
+     content: 
+     btntext: 
+     btnUrl: 
+     btnNewWindow:
+   - name: "Homework view/reply"                                           
+     icon: 
+     heading: Homework view/reply
+     description:
+     image: "assets/images/homework-view-reply.png" 
      content:
      btntext:
      btnUrl:
      btnNewWindow:
-- tabName: Tabs 2                                        
+   - name: "Attend Online Class"                                           
+     icon: 
+     heading: Attend Online Class
+     description:
+     image:  "assets/images/attend-online-class.png" 
+     content:
+     btntext:
+     btnUrl:
+     btnNewWindow:
+   - name: "Give Online Exam"                                           
+     icon: 
+     heading: Give Online Exam
+     description:
+     image: "assets/images/give-online-exam.png" 
+     content:
+     btntext:
+     btnUrl:
+     btnNewWindow:
+   - name: "Online Fee Payment"                                           
+     icon: 
+     heading: Online Fee Payment
+     description:
+     image: "assets/images/online-fee-payment.png" 
+     content:
+     btntext:
+     btnUrl:
+     btnNewWindow:
+   - name: "E-Learning Content"                                           
+     icon: 
+     heading: E-Learning Content
+     description:
+     image:  "assets/images/e-learning-content.png" 
+     content:
+     btntext:
+     btnUrl:
+     btnNewWindow:
+   - name: "Gallery"                                           
+     icon: 
+     heading: Gallery
+     description:
+     image: "assets/images/gallery.png" 
+     content:
+     btntext:
+     btnUrl:
+     btnNewWindow:
+- tabName: Teacher                                        
   icon: 
-  heading:  tabs 2
-  description: here are desc
+  heading:  Teacher
+  description: 
   image:
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  content: 
   btntext:
   btnUrl:
   btnNewWindow:
   child:
+   - name: "Take Attendance"                                           
+     icon: 
+     heading: Take Attendance
+     description:
+     image: "assets/images/take-attendance.png" 
+     content:
+     btntext: 
+     btnUrl:
+     btnNewWindow:
+   - name: "Send Homework"                                           
+     icon: 
+     heading: Send Homework
+     description:
+     image: "assets/images/send-homework.png" 
+     content:
+     btntext:
+     btnUrl:
+     btnNewWindow:
+   - name: "Take Online Class"                                           
+     icon: 
+     heading: Take Online Class
+     description:
+     image: "assets/images/take-online-class.png" 
+     content:
+     btntext:
+     btnUrl:
+     btnNewWindow:
+- tabName: Admin Login                                        
+  icon: 
+  heading:  Admin Login
+  description: 
+  image:
+  content: 
+  btntext:
+  btnUrl:
+  btnNewWindow:
+  child:
+   - name: "Dashboard "                                           
+     icon: 
+     heading: Dashboard 
+     description:
+     image: "assets/images/das-image-2.png" 
+     content:
+     btntext:
+     btnUrl:
+     btnNewWindow:
+   - name: "Report list"                                           
+     icon: 
+     heading: Report list 
+     description:
+     image: "assets/images/das-image-report.png" 
+     content:
+     btntext:
+     btnUrl:
+     btnNewWindow:
