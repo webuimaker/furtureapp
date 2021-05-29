@@ -3604,7 +3604,7 @@ a:hover { color: #333e98; text-decoration: none; }
 
 .testimonial-slider .testimonial-slider--info { align-items: center; margin-bottom: 22px; display: flex; }
 
-.testimonial-slider .testimonial-slider--info .testimonial-slider__media { flex-shrink: 0; margin-right: 30px; }
+.testimonial-slider .testimonial-slider--info .testimonial-slider__media { flex-shrink: 0; margin-right: 30px; max-width: 80px; max-height: 90px; }
 
 .testimonial-slider .testimonial-slider--info .testimonial-slider__media img { border-radius: 50%; }
 
