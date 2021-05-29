@@ -25,6 +25,8 @@ body {
   font: 16px/1.8 $font-family-base ;
   color: $darkerGray;
   font-weight: 500;
+  scroll-behavior: smooth;
+  position: relative;
 }
 a:hover{
   color: $primary;

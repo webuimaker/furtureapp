@@ -5,24 +5,21 @@ title: 'Future App'
 logo: "assets/images/logo.png"
 address: "Ahmedabad, Gujarat, 382481"
 phone: "+91 9601412598"
-email: "thesiliconvalleyacademy@gmail.com"
+email: "sales@futureapp.in"
 social:
 - icon: "fab  fa-facebook-square"
   title: "facebook"
-  link: "thesiliconvalleyacademy@gmail.com"
+  link: "sales@futureapp.in"
 - icon: "fab fa-twitter-square"
   title: "twitter"
-  link: "thesiliconvalleyacademy@gmail.com"
+  link: "sales@futureapp.in"
 // - icon: "fab fa-skype"
 //   title: "skype"
 //   link: "thesiliconvalleyacademy@gmail.com"
 apps:
-- link: "#" 
+- link: "https://play.google.com/store/apps/details?id=com.future.core" 
   icon: "/assets/images/googleplay-white.jpg"
   title: "google play"
-- link: "#" 
-  icon: "/assets/images/appstore-white.jpg"
-  title: "app store"
 
 
 markdown: kramdown
@@ -40,7 +37,7 @@ google_analytics: ""
 home:
   top-bar: 
     enabled: true
-    left: "<strong><a href='#' >Now Hiring:</a></strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed."
+    left: #<strong><a href='#' >Now Hiring:</a></strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
     right: 
     - icon: "fa fa-phone"
       title: "<strong>0122 8899900</strong>"
@@ -64,12 +61,11 @@ home:
     subHeading: "Connecting schools and  parents via technology to make your <span>child's future</span>"
     text: "<p>FutureApp allows parents to stay updated about their kids progress. At the same time it helps school management to make routine work automated and easy</p>"
     image: "assets/images/about.png"
-    videoUrl: "https://www.youtube.com/embed/pcj1XNnABak"  
-    ## 
+    videoUrl: "https://www.youtube.com/embed/pcj1XNnABak" 
   approch:
     enabled: true
     heading: "approch"
-    smallHeading: "" // put text for header below
+    smallHeading: 
     info: 
     - title: TRADITIONAL APPROACH
       icon: "assets/images/arrow.png"
