@@ -21,22 +21,13 @@
                         driver tracking.
                       </p> -->
                       <ul class="list-inline btns">
-                        <li class="list-inline-item">
-                          <a
-                            href="#"  title="app-store" ><img src="/assets/images/app-store.png" alt="app-store"></a
-                          >
-                        </li>
-                        <li  class="list-inline-item">
-                          <a
-                            href="#"
-                            title="google-play"
-                            ><img src="/assets/images/google-play.png" alt="app-store"></a
-                          >
-                        </li>
+                        {% for social in site.apps %}
+                          <li class="list-inline-item">
+                            <a href="{{social.link}}"><img src="{{social.icon}}"  class="{{social.icon}}"></i></a>
+                          </li>
+                        {% endfor %}
+
                       </ul>
-                      <!-- <p class="section-desc commission-free">
-                        Commission-free. No lock-in contract.
-                      </p> -->
                     </div>
                   </div>
                 </div>

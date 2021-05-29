@@ -3152,7 +3152,7 @@ readers do not read off random characters that represent icons */
 
 .black-bg { color: #ffffff; background-color: #000000; }
 
-.vertical-align-box { display: table; width: 100%; height: 40.8rem; padding: 3rem 2rem 6rem; }
+.vertical-align-box { display: table; width: 100%; height: 38.8rem; padding: 3rem 2rem 6rem; }
 
 .graph-bar .vertical-align-box { position: relative; z-index: 5; }
 
@@ -3461,7 +3461,7 @@ readers do not read off random characters that represent icons */
 /**************/
 html { font-size: 100%; }
 
-body { background: #fff; font: 16px/1.8 "Raleway", Arial, sans-serif, -apple-system; color: #181818; font-weight: 500; }
+body { background: #fff; font: 16px/1.8 "Raleway", Arial, sans-serif, -apple-system; color: #181818; font-weight: 500; scroll-behavior: smooth; position: relative; }
 
 a:hover { color: #333e98; text-decoration: none; }
 
@@ -3472,7 +3472,7 @@ a:hover { color: #333e98; text-decoration: none; }
 /**************/
 .header-area { background: #fff; }
 
-.top-bar { background: #f8f8f8; padding: 8px 0px; }
+.top-bar { background: #f8f8f8; padding: 2px 0px; }
 
 .top-bar .top-bar-wrap { display: flex; align-items: center; }
 
@@ -3489,6 +3489,10 @@ a:hover { color: #333e98; text-decoration: none; }
 .top-bar a { color: #181818; }
 
 .top-bar a:hover { color: #333e98; }
+
+.navbar-brand { padding-bottom: 0px; }
+
+.navbar-brand img { max-width: 60px; }
 
 /**************/
 /* Menu RULES */
@@ -3513,7 +3517,7 @@ a:hover { color: #333e98; text-decoration: none; }
 
 .hero { background: #212c86; }
 
-.section { padding: 80px 0px; }
+.section { padding: 40px 0px; }
 
 .section p { margin-bottom: 15px; }
 
@@ -3596,7 +3600,7 @@ a:hover { color: #333e98; text-decoration: none; }
 
 .single-fun-fact h3 { font-size: 40px; font-weight: 800; color: #ffc321; font-family: "Montserrat", sans-serif, Arial, sans-serif, -apple-system; text-align: center; }
 
-.testimonial-slider { position: relative; background: #fff; padding: 31px 50px 47px; border-radius: 5px; margin: 20px 15px 35px; box-shadow: 0 0 20px rgba(51, 51, 51, 0.3); transition: all 0.3s ease-in-out; transform: translateY(0px) !important; }
+.testimonial-slider { position: relative; background: #fff; padding: 31px 50px 47px; border-radius: 5px; margin: 20px 15px 35px; box-shadow: 0 0 20px rgba(51, 51, 51, 0.3); transition: all 0.3s ease-in-out; transform: translateY(0px) !important; min-height: 467px; }
 
 .testimonial-slider .author-info { text-align: left; }
 
@@ -3643,6 +3647,8 @@ a:hover { color: #333e98; text-decoration: none; }
 .contact-info { margin-bottom: 15px; }
 
 .contact-info h3 { color: #fff; font-size: 22px; font-weight: 600; margin-bottom: 8px; }
+
+.contact-info img { max-width: 170px; }
 
 .contact-info .lists { color: #fff; }
 

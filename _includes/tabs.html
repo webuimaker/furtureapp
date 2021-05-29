@@ -3,7 +3,7 @@
 
 
 {% if echo.enabled %}
-<section class="section echosystem bg-gray" id="how-its-works">
+<section class="section echosystem " id="how-its-works">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -14,7 +14,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div class="tabbable boxed parentTabs p-4">
+                <div class="tabbable boxed parentTabs px-4 pt-0 pb-4">
                     <ul class="nav nav-tabs nested d-flex justify-content-around">
                         {% for tabs in echoData %}
                             <li><a href='#{{tabs.tabName | downcase | remove: " " | remove: "/" }}' class="nav-link {% if  forloop.index == 1 %}active{% endif %}">{{tabs.tabName  }} </a></li>
@@ -43,10 +43,10 @@
                                                             {% endif %}
                                                             <div class="row mt-3">
                                                                 {% if childtab.content %}
-                                                                    <div class="col-md-5">
+                                                                    <div class="col-md-4">
 
                                                                 {% else %}
-                                                                <div class="col-md-8 text-center">
+                                                                <div class="col-md-4 text-center">
 
                                                                 {% endif %}
                                                                     <img src="{{childtab.image | relative_url}}" alt="{{childtab.name}}" class="img-fluid">

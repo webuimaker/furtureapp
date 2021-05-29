@@ -16,6 +16,13 @@
 
     <link href="/assets/images/favicon.ico" rel="icon">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+
+
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
 
@@ -71,13 +78,13 @@
 
 
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".header-area" data-offset="90">
     
 
    
 
 
-<section class="header-area">
+<section class="header-area" id="home">
     
     <div class="top-bar">        
         <div class="container">
@@ -85,16 +92,16 @@
                 <div class="col-md-12">
                     <div class="top-bar-wrap">
                         <div class="top-bar-left">
-                            <div class="top-bar-text"><strong><a href='#' >Now Hiring:</a></strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</div>
+                            <div class="top-bar-text"></div>
                         </div>
                         <div class="top-bar-right">
                             <ul class="top-bar-info">
                                 
                                     <li class="info-item">
                                         
-                                        <a href="tel:01228899900" class="info-link">
+                                        <a href="tel:+919601412598" class="info-link">
                                             <i class="info-icon fa fa-phone"></i>
-                                            <span class="info-text"><strong>0122 8899900</strong></span>
+                                            <span class="info-text"><strong>+91 9601412598</strong></span>
                                         </a>
                                         
                                     </li>
@@ -116,7 +123,7 @@
     
     <div class="container"> 
     <div class="row">
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent rounded w-100 menu-list">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent rounded w-100 menu-list" id="nav">
             <a class="navbar-brand" href="/"><img src="assets/images/logo.png" alt="Future App"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -125,53 +132,32 @@
                 <ul class="navbar-nav ml-auto">
                     
                         
-                            <li class="nav-item  active  ">
-                                <a href="/" class="nav-link">Home</a>
+                            <li class="nav-item  ">
+                                <a href="#home" class="nav-link">Home</a>
                             </li>
                         
                     
                         
                             <li class="nav-item  ">
-                                <a href="/#why" class="nav-link">Why Us</a>
+                                <a href="#how-its-works" class="nav-link">How its Works</a>
                             </li>
                         
                     
                         
                             <li class="nav-item  ">
-                                <a href="/#how" class="nav-link">How its Works</a>
+                                <a href="#about" class="nav-link">About Us</a>
                             </li>
                         
-                    
-                        
-                            <li class="nav-item  ">
-                                <a href="/#about" class="nav-link">About Us</a>
-                            </li>
-                        
-                    
-                        
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="/" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdown09">
-                                    
-                                        <a class="dropdown-item" href="/">link1</a>
-                                    
-                                        <a class="dropdown-item" href="/">link2</a>
-                                    
-                                        <a class="dropdown-item" href="/">link3</a>
-                                    
-                                </div>
-                            </li>
-                            
                     
                         
                             <li class="nav-item   bod-left ">
-                                <a href="/log" class="nav-link">Log In</a>
+                                <a href="https://portal.futureapp.in/" class="nav-link">Log In</a>
                             </li>
                         
                     
                         
                             <li class="nav-item   btn btn-light ">
-                                <a href="/join" class="nav-link">Join Us</a>
+                                <a href="#contact" class="nav-link">Join Us</a>
                             </li>
                         
                     
@@ -195,8 +181,8 @@
                       <h1 class="section-title" data-hero-title>
                         The All-in-One 
                         Educational Apps for
-                        <span class="hero-type-box"><span data-rest-name class="faster">School</span>
-                          <!-- <span class="hero-fix-el">restaurant</span> -->
+                        <span class="hero-type-box"><span  class="faster">School</span>
+                          <!-- <span data-rest-name class="faster">School</span> <span class="hero-fix-el">restaurant</span> -->
                           </span>
                       </h1>
                       <!-- <p class="section-desc">
@@ -204,22 +190,13 @@
                         driver tracking.
                       </p> -->
                       <ul class="list-inline btns">
-                        <li class="list-inline-item">
-                          <a
-                            href="#"  title="app-store" ><img src="/assets/images/app-store.png" alt="app-store"></a
-                          >
-                        </li>
-                        <li  class="list-inline-item">
-                          <a
-                            href="#"
-                            title="google-play"
-                            ><img src="/assets/images/google-play.png" alt="app-store"></a
-                          >
-                        </li>
+                        
+                          <li class="list-inline-item">
+                            <a href="https://play.google.com/store/apps/details?id=com.future.core"><img src="/assets/images/google-play.png"  class="/assets/images/google-play.png"></i></a>
+                          </li>
+                        
+
                       </ul>
-                      <!-- <p class="section-desc commission-free">
-                        Commission-free. No lock-in contract.
-                      </p> -->
                     </div>
                   </div>
                 </div>
@@ -310,7 +287,7 @@
                       ]
                     },
                     {
-                      "type": "School",
+                      "type": "School2",
                       "style": "blue",
                       "img_arr": [
                         "img/home/das-image-3.png",
@@ -320,9 +297,7 @@
                       ]
                     }
                    
-                  
-                     
-                      
+                                       
                     ]
                   }
                 </script>
@@ -336,7 +311,7 @@
 
 
 
-<section class="section">
+<section class="section" id="about">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -374,13 +349,11 @@
     <section class="section approch bg-gray">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 offset-md-2 text-center mb-5">
+                <div class="col-md-8 offset-md-2 text-center mb-4">
                     <div class="sec-heading ">                    
                         <h2>approch</h2>
                         
                         
-                        
-                            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
                         
                         
                     </div>
@@ -486,7 +459,7 @@
 
 
 
-<section class="section echosystem bg-gray">
+<section class="section echosystem " id="how-its-works">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -497,7 +470,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div class="tabbable boxed parentTabs p-4">
+                <div class="tabbable boxed parentTabs px-4 pt-0 pb-4">
                     <ul class="nav nav-tabs nested d-flex justify-content-around">
                         
                             <li><a href='#parentstudent' class="nav-link active">Parent/ Student </a></li>
@@ -540,7 +513,7 @@
                                                             
                                                             <div class="row mt-3">
                                                                 
-                                                                <div class="col-md-8 text-center">
+                                                                <div class="col-md-4 text-center">
 
                                                                 
                                                                     <img src="/assets/images/attendance-details.png" alt="Attendance Details" class="img-fluid">
@@ -554,7 +527,7 @@
                                                             
                                                             <div class="row mt-3">
                                                                 
-                                                                <div class="col-md-8 text-center">
+                                                                <div class="col-md-4 text-center">
 
                                                                 
                                                                     <img src="/assets/images/homework-view-reply.png" alt="Homework view/reply" class="img-fluid">
@@ -568,7 +541,7 @@
                                                             
                                                             <div class="row mt-3">
                                                                 
-                                                                <div class="col-md-8 text-center">
+                                                                <div class="col-md-4 text-center">
 
                                                                 
                                                                     <img src="/assets/images/attend-online-class.png" alt="Attend Online Class" class="img-fluid">
@@ -582,7 +555,7 @@
                                                             
                                                             <div class="row mt-3">
                                                                 
-                                                                <div class="col-md-8 text-center">
+                                                                <div class="col-md-4 text-center">
 
                                                                 
                                                                     <img src="/assets/images/give-online-exam.png" alt="Give Online Exam" class="img-fluid">
@@ -596,7 +569,7 @@
                                                             
                                                             <div class="row mt-3">
                                                                 
-                                                                <div class="col-md-8 text-center">
+                                                                <div class="col-md-4 text-center">
 
                                                                 
                                                                     <img src="/assets/images/online-fee-payment.png" alt="Online Fee Payment" class="img-fluid">
@@ -610,7 +583,7 @@
                                                             
                                                             <div class="row mt-3">
                                                                 
-                                                                <div class="col-md-8 text-center">
+                                                                <div class="col-md-4 text-center">
 
                                                                 
                                                                     <img src="/assets/images/e-learning-content.png" alt="E-Learning Content" class="img-fluid">
@@ -624,7 +597,7 @@
                                                             
                                                             <div class="row mt-3">
                                                                 
-                                                                <div class="col-md-8 text-center">
+                                                                <div class="col-md-4 text-center">
 
                                                                 
                                                                     <img src="/assets/images/gallery.png" alt="Gallery" class="img-fluid">
@@ -665,7 +638,7 @@
                                                             
                                                             <div class="row mt-3">
                                                                 
-                                                                <div class="col-md-8 text-center">
+                                                                <div class="col-md-4 text-center">
 
                                                                 
                                                                     <img src="/assets/images/take-attendance.png" alt="Take Attendance" class="img-fluid">
@@ -679,7 +652,7 @@
                                                             
                                                             <div class="row mt-3">
                                                                 
-                                                                <div class="col-md-8 text-center">
+                                                                <div class="col-md-4 text-center">
 
                                                                 
                                                                     <img src="/assets/images/send-homework.png" alt="Send Homework" class="img-fluid">
@@ -693,7 +666,7 @@
                                                             
                                                             <div class="row mt-3">
                                                                 
-                                                                <div class="col-md-8 text-center">
+                                                                <div class="col-md-4 text-center">
 
                                                                 
                                                                     <img src="/assets/images/take-online-class.png" alt="Take Online Class" class="img-fluid">
@@ -722,6 +695,8 @@
                                                     
                                                         <li><a href="#reportlist" class="nav-link "><span class="icon"><i class=""></i></span>Report list</a></li>
                                                     
+                                                        <li><a href="#apphomepage" class="nav-link "><span class="icon"><i class=""></i></span>App Home page</a></li>
+                                                    
                                                 </ul>
                                             </div>
                                             <div class="col-md-9 ">                                             
@@ -732,7 +707,7 @@
                                                             
                                                             <div class="row mt-3">
                                                                 
-                                                                <div class="col-md-8 text-center">
+                                                                <div class="col-md-4 text-center">
 
                                                                 
                                                                     <img src="/assets/images/das-image-2.png" alt="Dashboard " class="img-fluid">
@@ -746,10 +721,24 @@
                                                             
                                                             <div class="row mt-3">
                                                                 
-                                                                <div class="col-md-8 text-center">
+                                                                <div class="col-md-4 text-center">
 
                                                                 
                                                                     <img src="/assets/images/das-image-report.png" alt="Report list" class="img-fluid">
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    
+                                                        <div class="tab-pane pl-4 fade " id="apphomepage">
+                                                            <h3>App Home page</h3>
+                                                            
+                                                            <div class="row mt-3">
+                                                                
+                                                                <div class="col-md-4 text-center">
+
+                                                                
+                                                                    <img src="/assets/images/app-home-page.png" alt="App Home page" class="img-fluid">
                                                                 </div>
                                                                 
                                                             </div>
@@ -825,13 +814,13 @@
 
                     <div class="testimonial-slider--info">
                         <div class="testimonial-slider__media">
-                            <img src="assets/images/subhrajit-chakraborty.jpg" class="img-fluid" alt="SUBHRAJIT CHAKRABORTY">
+                            <img src="assets/images/subhrajit-chakraborty.jpg" class="img-fluid" alt="Subhrajit Chakraborty">
                         </div>
 
                         <div class="testimonial-slider__author">
                             
                             <div class="author-info">
-                                <h6 class="name">SUBHRAJIT CHAKRABORTY</h6>
+                                <h6 class="name">Subhrajit Chakraborty</h6>
                                 <span class="designation">Principle-Navodaya Bal Niketan</span>
                             </div>
                         </div>
@@ -972,7 +961,7 @@
 
 
 
-<section class="section contact">
+<section class="section contact" id="contact">
 
 
     <div class="container">
@@ -1009,7 +998,7 @@
                     <h3>Email:</h3>
                     <ul class="lists">
                         <li>
-                            <a href="mailto:thesiliconvalleyacademy@gmail.com"><i class="fa fa-envelope-square"></i> <span>thesiliconvalleyacademy@gmail.com</span></a>  
+                            <a href="mailto:sales@futureapp.in"><i class="fa fa-envelope-square"></i> <span>sales@futureapp.in</span></a>  
                          
                         </li>
                     </ul>
@@ -1035,10 +1024,7 @@
                 <div class="contact-info">
                     <h3>Download:</h3>
                         
-                            <a href="#"><img src="/assets/images/googleplay-white.jpg"  class="/assets/images/googleplay-white.jpg"></i></a>
-                           
-                        
-                            <a href="#"><img src="/assets/images/appstore-white.jpg"  class="/assets/images/appstore-white.jpg"></i></a>
+                            <a href="https://play.google.com/store/apps/details?id=com.future.core"><img src="/assets/images/google-play.png"  class="/assets/images/google-play.png"></i></a>
                            
                         
                     
@@ -1186,15 +1172,11 @@
         <h3>Useful Links</h3>  
         <ul class="foot-link">      
           
-            <li><a href="#">Why us</a></li>
+            <li><a href="#home">Home</a></li>
           
-            <li><a href="#">How it works</a></li>
+            <li><a href="#how-its-works">How its Works</a></li>
           
-            <li><a href="#">About US</a></li>
-          
-            <li><a href="#">Contact Us</a></li>
-          
-            <li><a href="#">Pricing</a></li>
+            <li><a href="#about">About Us</a></li>
           
         </ul>
       </div>
@@ -1219,7 +1201,7 @@
     <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
 
 
-    
+    <script src="/assets/js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="/assets/js/jquery.waypoints.min.js"></script>
     <script type="text/javascript" src="/assets/js/jquery.counterup.min.js"></script>
     
@@ -1291,6 +1273,30 @@ $(function () {
 
 
 $(document).ready(function(){
+
+    "use strict";
+
+    $('body').scrollspy({ target: '.header-area', offset:50 });
+
+    $('[data-spy="scroll"]').each(function () {
+    var $spy = $(this).scrollspy('refresh')
+    })
+    $('[data-spy="scroll"]').on('activate.bs.scrollspy', function () {
+        // do something…
+        })
+
+       /*---------------------------
+        SMOOTH SCROLL
+    -----------------------------*/
+    $('ul#nav li a[href^="#"], a.navbar-brand, a.scrolltotop').on('click', function (event) {
+        var id = $(this).attr("href");
+        var offset = 60;
+        var target = $(id).offset().top - offset;
+        $('html, body').animate({
+            scrollTop: target
+        }, 1500, "easeInOutExpo");
+        event.preventDefault();
+    });
         
         $('.customer-logos').slick({
           slidesToShow: 5,

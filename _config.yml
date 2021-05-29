@@ -18,7 +18,7 @@ social:
 //   link: "thesiliconvalleyacademy@gmail.com"
 apps:
 - link: "https://play.google.com/store/apps/details?id=com.future.core" 
-  icon: "/assets/images/googleplay-white.jpg"
+  icon: "/assets/images/google-play.png"
   title: "google play"
 
 
@@ -40,8 +40,8 @@ home:
     left: #<strong><a href='#' >Now Hiring:</a></strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
     right: 
     - icon: "fa fa-phone"
-      title: "<strong>0122 8899900</strong>"
-      link: "tel:01228899900"
+      title: "<strong>+91 9601412598</strong>"
+      link: "tel:+919601412598"
     - icon: "fa fa-map-marker-alt"
       title: "Ahmedabad, Gujarat, 382481"
       link: 
@@ -134,17 +134,19 @@ footer:
     text: Terms of Use
   - link: "#"
     text: Privacy Policy
-  centercol:
-  - link: "#"
-    text: Why us
-  - link: "#"
-    text: How it works
-  - link: "#"
-    text: About US 
-  - link: "#"
-    text: Contact Us
-  - link: "#"
-    text: Pricing
+  centercol:  
+  - text: Home                                             
+    link: "#home"
+    weight: 1
+    pageType: "same"
+  - text: How its Works
+    link: "#how-its-works"
+    pageType: "same"
+    weight: 2
+  - text: About Us
+    link: "#about"
+    pageType: "same"
+    weight: 3
   rightcol:
     text: We’re more interested in you. let's grow together
     btntext: "Register Now" 

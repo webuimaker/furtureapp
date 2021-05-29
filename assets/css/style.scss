@@ -46,7 +46,7 @@ a:hover{
 
 .top-bar{
   background: $lightGray;
-  padding: 8px 0px;
+  padding: 2px 0px;
   .top-bar-wrap {
       display: flex;
       align-items: center;
@@ -79,6 +79,13 @@ a:hover{
   }
 
 }
+
+.navbar-brand{
+  padding-bottom: 0px;
+  img{
+    max-width: 60px;
+  }
+} 
 /**************/
 /* Menu RULES */
 /**************/
@@ -144,7 +151,7 @@ a:hover{
 }
 
 .section{
-  padding: 80px 0px;  
+  padding: 40px 0px;  
   p{
     margin-bottom: 15px;
   }
@@ -403,6 +410,7 @@ opacity:1;
   box-shadow: 0 0 20px rgba(51, 51, 51,  .3);
   transition: all 0.3s ease-in-out;
   transform: translateY(0px) !important;
+  min-height: 467px;
   .author-info{
     text-align: left;
     .name{
@@ -525,6 +533,10 @@ opacity:1;
     font-weight: 600;
     margin-bottom: 8px;
   }
+  img{
+    max-width: 170px;
+  }
+
   .lists{
     color: #fff;
 
@@ -534,7 +546,7 @@ opacity:1;
     li{
       a{
         color: $white;
-
+        
         &:hover{
           color: $helping;
         }
