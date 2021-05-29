@@ -136,3 +136,14 @@
      btntext:
      btnUrl:
      btnNewWindow:
+   - name: "App Home page"                                           
+     icon: 
+     heading: App Home page 
+     description:
+     image: "assets/images/app-home-page.png" 
+     content:
+     btntext:
+     btnUrl:
+     btnNewWindow:
+
+     
