@@ -97,8 +97,9 @@ $(document).ready(function(){
             type: "POST",
             url: "https://future-apps.thesiliconvalleyacademy.com/subscriptions",
             data: {'Name': name, 'Email': email, 'Phone_number': phone_number, 'message':  message},
-            contentType: "application/json; charset=utf-8",
-            dataType : "json",
+            // contentType: "application/json; charset=utf-8", application/x-www-form-urlencoded
+            contentType: "application/x-www-form-urlencoded", 
+            // dataType : "json",
             success: function (response) {
                 if(response.d == true){
                     alter("you will redirect");
@@ -153,7 +154,7 @@ $(document).ready(function(){
           }, {
               breakpoint: 520,
               settings: {
-                  slidesToShow: 3
+                  slidesToShow: 2
               }
           }]
       });
@@ -174,12 +175,12 @@ $(document).ready(function(){
           responsive: [{
               breakpoint: 768,
               settings: {
-                  slidesToShow: 4
+                  slidesToShow: 3
               }
           }, {
               breakpoint: 520,
               settings: {
-                  slidesToShow: 3
+                  slidesToShow: 1
               }
           }]
       });

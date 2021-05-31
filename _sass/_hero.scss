@@ -392,6 +392,10 @@
   height: 38.8rem;
   // padding: 6rem 2rem;
   padding:3rem 2rem 6rem;
+  
+  @include mobile {            
+    height: auto;
+  }
 }
 .graph-bar .vertical-align-box {
   position: relative;
@@ -457,6 +461,10 @@
   color: #fff;
   font-weight: 600;
   font-family: $font-family-heading;
+  @include mobile { 
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
 }
 .section-real-time.big-text .section-desc {
   font-size: 2.4rem;
@@ -477,6 +485,10 @@
   left: 0;
   width: 100%;
   height: 100%;
+  
+  @include mobile {            
+    position: relative;
+  }
 }
 .real-time-bg-box .img-box {
   max-width: 30.8rem;
@@ -684,6 +696,10 @@
     margin: 0 25% 0px auto;
     /* margin-bottom: -10px; */
     bottom: -50%;
+
+    @include mobile { 
+      margin: 0 2% 0px auto;
+   }
 }
 
 .home .real-time-bg-box .bottom-img-box {
@@ -1223,6 +1239,12 @@
     transform: translate(25%, 67%) rotate(342deg);
     bottom: -69px;
 
+      @include mobile { 
+        width: 24rem;
+        transform: translate(0%, 57%) rotate(342deg);
+        bottom: 0px;
+    }
+
     .bottom-img.img-box{
       max-width: 100%;
 
@@ -1235,7 +1257,11 @@
   .right-img-box.ipad-container{
     top: 57%;
     .top-img.img-box{
-      max-width: 30.8rem;;
+      max-width: 30.8rem;
+
+      @include mobile { 
+         max-width: 20.8rem;
+      }
 
       .real-iPad-wrap{
         .real-iPad-box{
@@ -1246,6 +1272,11 @@
 
     .bottom-img.img-box{
       max-width: 30rem;
+      
+      @include mobile { 
+        max-width: 20.8rem;
+        display: none;
+     }
       margin-top: -70%;
       .real-iPad-wrap{
         .real-iPad-box{
@@ -1258,6 +1289,13 @@
     transform: translate(25%, 8%) rotate(341deg);
     max-width: 177px;
     bottom: -55%;
+
+     @include mobile { 
+      max-width: 120px;
+        transform: translate(0%, 8%) rotate(341deg);        
+    }
+
+
     .left-img.img-box{
       .real-iPhone-wrap{
         .real-iPhone-inner{
@@ -1280,5 +1318,8 @@
 .real-time-bg-box .right-img-box.ipad-container{
   transform: translate(0, -50%) rotate(340deg);
   top: 63%;
+    @include mobile { 
+      top: 5%;
+  }
 }
 
