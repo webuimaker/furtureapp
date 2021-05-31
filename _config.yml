@@ -4,22 +4,32 @@ permalink: pretty
 title: 'Future App'
 logo: "assets/images/logo.png"
 address: "Ahmedabad, Gujarat, 382481"
-phone: "+91 9601412598"
-email: "sales@futureapp.in"
+call-chat:
+  enable: true
+  items:
+    - icon: "fa fa-phone-square"
+      title: "+91 9601412598"
+      link: "tel:+919601412598"
+    - icon: "fab fa-whatsapp"
+      title: "+91 9601412598"
+      link: "https://wa.me/919601412598"
 social:
-- icon: "fab  fa-facebook-square"
-  title: "facebook"
-  link: "sales@futureapp.in"
-- icon: "fab fa-twitter-square"
-  title: "twitter"
-  link: "sales@futureapp.in"
-// - icon: "fab fa-skype"
-//   title: "skype"
-//   link: "thesiliconvalleyacademy@gmail.com"
+  enable: false
+  items:
+  - icon: "fab  fa-facebook-square"
+    title: "facebook"
+    link: ""
+  - icon: "fab fa-twitter-square"
+    title: "twitter"
+    link: ""
 apps:
-- link: "https://play.google.com/store/apps/details?id=com.future.core" 
-  icon: "/assets/images/google-play.png"
-  title: "google play"
+  enable: true
+  items:
+  - link: "https://play.google.com/store/apps/details?id=com.future.core" 
+    icon: "/assets/images/google-play.png"
+    title: "google play"
+
+email: "sales@futureapp.in"
 
 
 markdown: kramdown
@@ -63,7 +73,7 @@ home:
     image: "assets/images/about.png"
     videoUrl: "https://www.youtube.com/embed/pcj1XNnABak" 
   approch:
-    enabled: true
+    enabled: false
     heading: "approch"
     smallHeading: 
     info: 
@@ -80,14 +90,14 @@ home:
     title: "Counter"
     image: "assets/images/counter-bg.jpg"
     lists:
-    - icon: "assets/images/scucceful.png"
-      number: 20 
+    - icon: "assets/images/online-class.png"
+      number: 3000 
       afternumber: "+"
-      title: Successful Years
-    - icon: "assets/images/happy.png"
-      number: 1300
+      title: "Online Classes Conducted"
+    - icon: "assets/images/school.png"
+      number: 200
       afternumber: "+"
-      title: Happy Clients
+      title: Happy School 
     - icon: "assets/images/satisfaction.png"
       number: 99
       afternumber: "%"
@@ -115,7 +125,7 @@ home:
     title: "We'd love to hear from you"
     badgeTitle: "Get IN Touch"
   help:
-    enabled: true
+    enabled: false
     title: "Help whenever you need it"
     badgeTitle: "Help"
     info: "Our support team is available 24/7 via live chat, phone and email. Whether you need help updating your menu,<br> want to run a new marketing campaign or have a product question, we’re always here to help."
@@ -130,9 +140,7 @@ footer:
   centercolHeading:  "Useful Links"
   rightcolHeading: "We're Hiring I!"
   leftcol:
-  - link: "#"
-    text: Terms of Use
-  - link: "#"
+  - link: "/privacy-policy/"
     text: Privacy Policy
   centercol:  
   - text: Home                                             
@@ -150,7 +158,7 @@ footer:
   rightcol:
     text: We’re more interested in you. let's grow together
     btntext: "Register Now" 
-    btnurl: "#" 
+    btnurl: "#contact" 
 
 
 

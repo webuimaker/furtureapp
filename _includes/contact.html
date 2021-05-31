@@ -16,6 +16,8 @@
 
            
             <div class="col-md-5 col-sm-12">
+
+
                 <div class="contact-info">
                     <h3>Address:</h3>
                     <ul class="lists">
@@ -24,15 +26,23 @@
                         </li>
                     </ul>
                 </div>
+
+                {% if site.call-chat.enable %}
                 <div class="contact-info">
-                    <h3>Phone:</h3>
+                    <h3>Call/Chat:</h3>
                     <ul class="lists">
-                        <li>
-                            <i class="fa fa-phone-square"></i> <span>{{site.phone}}</span>
-                        </li>
+                        {% for items in site.call-chat.items %}
+                            <li>
+                                <a href="{{items.link}}"><i class="{{items.icon}}"></i> <span>{{items.title}}</span></a>
+                            </li>
+                        {% endfor %}
                     </ul>
                 </div>
-                
+
+                {% endif %}
+
+                {% if site.email %}
+
                 <div class="contact-info">
                     <h3>Email:</h3>
                     <ul class="lists">
@@ -42,28 +52,32 @@
                         </li>
                     </ul>
                 </div>
+                {% endif %}
                 
-                
+                {% if site.social.enable %}                
                 <div class="contact-info">
                     <h3>Social Media:</h3>
                     <ul class="lists">
-                        {% for social in site.social %}
+                        {% for social in site.social.items %}
                             <li>
-                                <a href="mailto:{{site.link}}"><i class="{{social.icon}}"></i> <span>{{social.title}}</span></a>
+                                <a href="{{site.link}}"><i class="{{social.icon}}"></i> <span>{{social.title}}</span></a>
                             </li>
                         {% endfor %}
                     </ul>
                 </div>
 
-                
-                <div class="contact-info">
-                    <h3>Download:</h3>
-                        {% for social in site.apps %}
-                            <a href="{{social.link}}"><img src="{{social.icon}}"  class="{{social.icon}}"></i></a>
-                           
-                        {% endfor %}
-                    
-                </div>
+                {% endif %}
+
+                {% if site.apps.enable %} 
+                    <div class="contact-info">
+                        <h3>Download:</h3>
+                            {% for social in site.apps.items %}
+                                <a href="{{social.link}}"><img src="{{social.icon}}"  class="{{social.icon}}"></i></a>
+                            
+                            {% endfor %}
+                        
+                    </div>
+                {% endif %}
             </div>
             
             <div class="col-md-7 col-sm-12">

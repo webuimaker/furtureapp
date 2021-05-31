@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-5 col-sm-12 leftcol">
-          <img src="{{foot.logo}}" alt="{{site.title}}" class="img-fluid">
+          <img src="{{foot.logo | relative_url}}" alt="{{site.title}}" class="img-fluid">
           <p class="mb-4">© 2021 {{ site.title }}. {{foot.copyright}}.</p>
           <ul class="foot-link list-inline">
             {% for leftlinks in foot.leftcol %}

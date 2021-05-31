@@ -38,7 +38,7 @@ $fa-font-path: '../fonts/fontawesome-free-5.15.2-web/webfonts';
 
 // Mobile breakpoints
 @mixin mobile {
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 767px) {
     @content;
   }
 }
@@ -49,4 +49,6 @@ $fa-font-path: '../fonts/fontawesome-free-5.15.2-web/webfonts';
     @content;
   }
 }
+
+
 
