@@ -96,7 +96,7 @@ $(document).ready(function(){
         $.ajax({            
             type: "POST",
             url: "https://future-apps.thesiliconvalleyacademy.com/subscriptions",
-            data: {'Name': name, 'Email':email, 'Phone_number':phone_number, 'message':message},
+            data: {'Name': name, 'Email': email, 'Phone_number': phone_number, 'message':  message},
             contentType: "application/json; charset=utf-8",
             dataType : "json",
             success: function (response) {
