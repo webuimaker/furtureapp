@@ -724,3 +724,11 @@ footer{
     
   }
 }
+
+.message-submit{
+  display: none;
+  &.show-messsage{
+  display: block;
+
+  }
+}

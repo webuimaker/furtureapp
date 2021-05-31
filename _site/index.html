@@ -1002,7 +1002,7 @@
             
             <div class="col-md-7 col-sm-12">
                 <div class="formBox" >
-                    <form class="w-100" action="https://future-apps.thesiliconvalleyacademy.com/subscriptions" method="post"  id="contact-form1">
+                    <form class="w-100" action="/thanks/" method="post"  id="contact-form1">
 
     
                             <div class="row">
@@ -1065,7 +1065,7 @@
     
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <input type="submit" name="" class="btn btn-submit" value="Send Message">
+                                    <input type="submit" name="" class="btn btn-submit" value="Send Message" id="subContact">
                                 </div>
                             </div>
 
@@ -1217,6 +1217,33 @@ $(function () {
 $(document).ready(function(){
 
     "use strict";
+
+    $("#subContact").click(function() {
+        
+        alert("yes bro");
+
+        
+        $.ajax({            
+            type: "POST",
+            url: "https://future-apps.thesiliconvalleyacademy.com/subscriptions",
+            data: {},
+            contentType: "application/json; charset=utf-8",
+            dataType : "json",
+            success: function (response) {
+                if(response.d == true){
+                    alter("you will redirect");
+                    window.location = "/thanks/";
+                    // $(.message-submit).addClass(show-messsage);
+
+                }
+            },
+            failure: function(response){
+                alert(response.d);
+            }
+        });
+    });
+
+
 
     $('body').scrollspy({ target: '.header-area', offset:50 });
 

@@ -3712,4 +3712,8 @@ footer .foot-link li a:hover { color: #ffc321; }
 
 .echosystem .parentTabs h3 { font-size: 32px; }
 
+.message-submit { display: none; }
+
+.message-submit.show-messsage { display: block; }
+
 /*# sourceMappingURL=style.css.map */

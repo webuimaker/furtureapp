@@ -84,6 +84,33 @@ $(document).ready(function(){
 
     "use strict";
 
+    $("#subContact").click(function() {
+        
+        alert("yes bro");
+
+        
+        $.ajax({            
+            type: "POST",
+            url: "https://future-apps.thesiliconvalleyacademy.com/subscriptions",
+            data: {},
+            contentType: "application/json; charset=utf-8",
+            dataType : "json",
+            success: function (response) {
+                if(response.d == true){
+                    alter("you will redirect");
+                    window.location = "/thanks/";
+                    // $(.message-submit).addClass(show-messsage);
+
+                }
+            },
+            failure: function(response){
+                alert(response.d);
+            }
+        });
+    });
+
+
+
     $('body').scrollspy({ target: '.header-area', offset:50 });
 
     $('[data-spy="scroll"]').each(function () {
