@@ -11,6 +11,11 @@ main:
     url: "#about"
     pageType: "same"
     weight: 3
+  - name: Soponsers
+    url: '/soponsers/'
+    pageType: "external"
+    weight: 3
+    button: true
   - name: Log In
     url: 'https://portal.futureapp.in/'
     pageType: "external"
@@ -20,6 +25,8 @@ main:
     url: '#contact'
     weight: 5
     button: true
+
+    
 
 
 

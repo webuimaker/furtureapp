@@ -2,8 +2,10 @@ baseurl: ''
 exclude: ['README.md']
 permalink: pretty
 title: 'Future App'
+tagline: "The All-in-One Educational Apps for School|school app| school app login school parent app| school mitra app | e-learning |student "
+description: "Connecting schools and parents via technology to make your child's future. FutureApp allows parents to stay updated about their kids progress. At the same time it helps school management to make routine work automated and easy"
 logo: "assets/images/logo.png"
-address: "Ahmedabad, Gujarat, 382481"
+address: "C-206, Ganesh Glory 11 Jagatpur Road, Sarkhej - Gandhinagar Highway, Gota, Ahmedabad, Gujarat 382470"
 call-chat:
   enable: true
   items:
@@ -14,18 +16,18 @@ call-chat:
       title: "+91 9601412598"
       link: "https://wa.me/919601412598"
 social:
-  enable: false
+  enable: true
   items:
   - icon: "fab  fa-facebook-square"
     title: "facebook"
-    link: ""
+    link: "https://www.facebook.com/futureapp.in/"
   - icon: "fab fa-twitter-square"
     title: "twitter"
     link: ""
 apps:
   enable: true
   items:
-  - link: "https://play.google.com/store/apps/details?id=com.future.core" 
+  - link: "https://play.google.com/store/apps/details?id=com.future.core"
     icon: "/assets/images/google-play.png"
     title: "google play"
 
@@ -42,19 +44,19 @@ sass:
 disqus: ""
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: ""
+google_analytics: "UA-155864468-1"
 
 home:
-  top-bar: 
+  top-bar:
     enabled: true
     left: #<strong><a href='#' >Now Hiring:</a></strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
-    right: 
+    right:
     - icon: "fa fa-phone"
       title: "<strong>+91 9601412598</strong>"
       link: "tel:+919601412598"
     - icon: "fa fa-map-marker-alt"
-      title: "Ahmedabad, Gujarat, 382481"
-      link: 
+      title: "C-206, Ganesh Glory 11 Jagatpur Road, Sarkhej - Gandhinagar Highway, Gota, Ahmedabad, Gujarat 382470"
+      link:
   hero:
     image: "assets/images/banner.jpg"
     title:
@@ -71,12 +73,12 @@ home:
     subHeading: "Connecting schools and  parents via technology to make your <span>child's future</span>"
     text: "<p>FutureApp allows parents to stay updated about their kids progress. At the same time it helps school management to make routine work automated and easy</p>"
     image: "assets/images/about.png"
-    videoUrl: "https://www.youtube.com/embed/pcj1XNnABak" 
+    videoUrl: "https://www.youtube.com/embed/pcj1XNnABak"
   approch:
     enabled: false
     heading: "approch"
-    smallHeading: 
-    info: 
+    smallHeading:
+    info:
     - title: TRADITIONAL APPROACH
       icon: "assets/images/arrow.png"
       image:  "assets/images/traditional.png"
@@ -91,13 +93,13 @@ home:
     image: "assets/images/counter-bg.jpg"
     lists:
     - icon: "assets/images/online-class.png"
-      number: 3000 
+      number: 100000
       afternumber: "+"
       title: "Online Classes Conducted"
     - icon: "assets/images/school.png"
       number: 200
       afternumber: "+"
-      title: Happy School 
+      title: Happy Schools
     - icon: "assets/images/satisfaction.png"
       number: 99
       afternumber: "%"
@@ -131,19 +133,19 @@ home:
     info: "Our support team is available 24/7 via live chat, phone and email. Whether you need help updating your menu,<br> want to run a new marketing campaign or have a product question, we’re always here to help."
     image: "assets/images/help.png"
 
-  
-    
+
+
 footer:
   logo: "assets/images/white-logo.png"
   copyright: All Rights Reserved
-  leftcolHeading: 
+  leftcolHeading:
   centercolHeading:  "Useful Links"
   rightcolHeading: "We're Hiring I!"
   leftcol:
   - link: "/privacy-policy/"
     text: Privacy Policy
-  centercol:  
-  - text: Home                                             
+  centercol:
+  - text: Home
     link: "#home"
     weight: 1
     pageType: "same"
@@ -157,8 +159,8 @@ footer:
     weight: 3
   rightcol:
     text: We’re more interested in you. let's grow together
-    btntext: "Register Now" 
-    btnurl: "#contact" 
+    btntext: "Register Now"
+    btnurl: "#contact"
 
 
 
@@ -166,7 +168,7 @@ footer:
 gems:
 - jekyll-sitemap
 - jekyll-paginate
-
+- jekyll-seo-tag
 
 
 # Exclude these files from your production _site

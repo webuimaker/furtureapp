@@ -6,15 +6,15 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center mb-5">
-                <div class="sec-heading2">  
-                    <h6 class="text-white">{{conact.badgeTitle}}</h6>                  
+                <div class="sec-heading2">
+                    <h6 class="text-white">{{conact.badgeTitle}}</h6>
                     <h2 class="text-white">{{conact.title}}</h2>
                 </div>
             </div>
         </div>
         <div class="row">
 
-           
+
             <div class="col-md-5 col-sm-12">
 
 
@@ -47,20 +47,20 @@
                     <h3>Email:</h3>
                     <ul class="lists">
                         <li>
-                            <a href="mailto:{{site.email}}"><i class="fa fa-envelope-square"></i> <span>{{site.email}}</span></a>  
-                         
+                            <a href="mailto:{{site.email}}"><i class="fa fa-envelope-square"></i> <span>{{site.email}}</span></a>
+
                         </li>
                     </ul>
                 </div>
                 {% endif %}
-                
-                {% if site.social.enable %}                
+
+                {% if site.social.enable %}
                 <div class="contact-info">
                     <h3>Social Media:</h3>
                     <ul class="lists">
                         {% for social in site.social.items %}
                             <li>
-                                <a href="{{site.link}}"><i class="{{social.icon}}"></i> <span>{{social.title}}</span></a>
+                                <a href="{{social.link}}"><i class="{{social.icon}}"></i> <span>{{social.title}}</span></a>
                             </li>
                         {% endfor %}
                     </ul>
@@ -68,62 +68,63 @@
 
                 {% endif %}
 
-                {% if site.apps.enable %} 
+                {% if site.apps.enable %}
                     <div class="contact-info">
                         <h3>Download:</h3>
                             {% for social in site.apps.items %}
                                 <a href="{{social.link}}"><img src="{{social.icon}}"  class="{{social.icon}}"></i></a>
-                            
+
                             {% endfor %}
-                        
+
                     </div>
                 {% endif %}
             </div>
-            
+
             <div class="col-md-7 col-sm-12">
                 <div class="formBox" >
-                    <form class="w-100" action="{{site.url}}/thanks/" method="post">
+                    <form class="w-100" method="post">
 
-    
+
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group ">
-                                        <label for="name">First Name <span>*</span></label>
-                                        <input type="text" name="name" class="input" required>
+                                        <label for="name">Name <span>*</span></label>
+                                        <input id="name" type="text" name="name" class="input" required>
                                     </div>
                                 </div>
 
-                                
+
                                 <div class="col-sm-6">
                                     <div class="form-group ">
                                         <label for="phone_number">Phone Number <span>*</span></label>
-                                        <input type="tel" name="phone_number" class="input" required>
+                                        <input id="phone_number" type="tel" name="phone_number" class="input" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+
                                     </div>
                                 </div>
 
-                                
+
                                 <div class="col-sm-6">
                                     <div class="form-group ">
-                                        <label for="email">Email <span>*</span></label>
-                                        <input type="email" name="email" class="input" required>
+                                        <label for="email">Email </label>
+                                        <input id="email" type="email" name="email" class="input">
                                     </div>
                                 </div>
 
-                                
+
                                 <div class="col-sm-6">
                                     <div class="form-group ">
-                                        <label for="school">School <span>*</span></label>
-                                        <input type="text" name="school" class="input" required>
+                                        <label for="school">School </label>
+                                        <input id="school" type="text" name="school" class="input">
                                     </div>
                                 </div>
-    
+
                             </div>
-    
+
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        <label for="message">Mesage <span>*</span></label>
-                                        <textarea name="message" rows="6" class="input" required></textarea>
+                                        <label for="message">Message</label>
+                                        <textarea id="message" name="message" rows="6" class="input"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -134,15 +135,15 @@
                                 </div>
                             </div> -->
 
-<!--                             
+<!--
                             <div class="row mb-3">
                                 <div class="col-sm-12">
                                     <input type="checkbox" name="agree" class="input" id="agree" required>
                                     <label for="agree" class="font-sm">I agree to receive other communications from fututreapp. <span>*</span></label>
-                                    
+
                                 </div>
                             </div> -->
-    
+
                             <div class="row">
                                 <div class="col-sm-12">
                                     <input type="submit" name="" class="btn btn-submit" value="Send Message" id="subContact">
@@ -159,7 +160,7 @@
                             </div>
                     </form>
                 </div>
-                
+
             </div>
         </div>
     </div>

@@ -3,6 +3,8 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    {% include analytics.html %}
+    {% seo %}
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -11,7 +13,7 @@
 
     <meta name="author" content="{{ site.name }}" />
     <meta name="description" content="{% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}">
-    
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
     <link href="/assets/images/favicon.ico" rel="icon">
@@ -32,7 +34,7 @@
     <!-- <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/animate.min.css" /> -->
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/animate.css" />
 
-    
+
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/style.css" />
 
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
@@ -46,6 +48,3 @@
 
   </head>
   <body data-spy="scroll" data-target=".header-area" data-offset="90">
-    
-
-   

@@ -3527,6 +3527,8 @@ a:hover { color: #333e98; text-decoration: none; }
 
 .menu-list ul li.nav-item.active a.nav-link { color: #333e98; }
 
+.menu-list ul li.nav-item.bod-left { margin-left: 15px; }
+
 .menu-list ul li.nav-item.bod-left:before { width: 1px; height: 80%; background: #808080; content: ""; position: absolute; left: 0px; margin: auto 0px; bottom: 0px; top: 0px; }
 
 @media screen and (max-width: 767px) { .menu-list ul li.nav-item.bod-left:before { display: none; } }

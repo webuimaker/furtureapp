@@ -37,7 +37,7 @@
                                                 <div class="tab-content pt-4">
                                                     {% for childtab in tabs.child %}
                                                         <div class="tab-pane pl-4 fade {% if  forloop.index == 1 %}active show{% endif %}" id="{{childtab.name | downcase | remove: " "  | remove: "/" }}">
-                                                            <h3>{{childtab.heading}}</h3>
+                                                            <h3>{{childtab.heading}} </h3>
                                                             {% if childtab.description %}
                                                                 <p>{{childtab.description}}</p>
                                                             {% endif %}
@@ -46,7 +46,7 @@
                                                                     <div class="col-md-4">
 
                                                                 {% else %}
-                                                                <div class="col-md-4 text-center">
+                                                                <div class=" {% if childtab.heading == 'Dashboard' or childtab.heading == 'Report list' %} col-md-6 {% else %} col-md-4 {% endif %} text-center">
 
                                                                 {% endif %}
                                                                     <img src="{{childtab.image | relative_url}}" alt="{{childtab.name}}" class="img-fluid">

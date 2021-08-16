@@ -56,62 +56,32 @@ $('#playerID').click(function(){
 });
 
 
-$(function () {
-  $('#contact-form').on('submit', function (e) {
-   if (!e.isDefaultPrevented()) {
-    var url = "https://future-apps.thesiliconvalleyacademy.com/subscriptions";
-
-    $.ajax({
-     type: "POST",
-     url: url,
-     contentType: 'application/x-www-form-urlencoded',
-     data: $(this).serialize(),
-     success: function (data) {
-      var messageAlert = 'alert-' + data.type;
-      var messageText = data.message;
-      var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-      if (messageAlert && messageText) {
-       $('#contact-form').find('.messages').html(alertBox);
-       $('#contact-form')[0].reset();
-      }
-     }
-    });
-    return false;
-
-   }
-  })
-});
-
 
 $(document).ready(function(){
 
     "use strict";
 
-    $("#subContact").click(function() {
-        
-        alert("yes bro");
+    $("form").submit(function (event) {
+        var formData = {
+          name: $("#name").val(),
+          email: $("#email").val(),
+          phone_number: $("#phone_number").val(),
+          school: $("#school").val(),
+          message: $("#message").val()
+        };
 
-
-
-        $.ajax({            
-            type: "POST",
-            url: "https://future-apps.thesiliconvalleyacademy.com/subscriptions",
-            data: {'Name': name, 'Email': email, 'Phone_number': phone_number, 'message':  message},
-            // contentType: "application/json; charset=utf-8", application/x-www-form-urlencoded
-            contentType: "application/x-www-form-urlencoded", 
-            // dataType : "json",
-            success: function (response) {
-                if(response.d == true){
-                    alter("you will redirect");
-                    window.location = "/thanks/";
-                    $(".message-submit").addClass(show-messsage);
-
-                }
-            },
-            failure: function(response){
-                alert(response.d);
-            }
+        $.ajax({
+          type: "POST",
+          url: "https://api.futureapp.in/subscriptions",
+          data: formData,
+          dataType: "json",
+          encode: true,
+        }).done(function (data) {
+          console.log(data);
+          window.location = "/thanks/";
+          $(".message-submit").addClass(show-messsage);
         });
+        event.preventDefault();
     });
 
 
@@ -293,7 +263,7 @@ jQuery(document).ready(function($) {
 
                 var nextType = types[nextStep].type;
 
-                heroRestWidthBox.html('<span>'+nextType+'</span> restaurant');
+                heroRestWidthBox.html('<span>'+nextType+'</span>');
                 heroRestWidth = heroRestWidthBox.width();
 
 
