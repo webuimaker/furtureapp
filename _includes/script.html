@@ -85,6 +85,32 @@ $(document).ready(function(){
     });
 
 
+    
+    $(".sponserform").submit(function (event) {
+        var formData = {
+          name: $("#name").val(),
+          email: $("#email").val(),
+          phone_number: $("#phone_number").val(),
+          address: $("#address").val(),
+          description: $("#description").val()
+        };
+
+        $.ajax({
+          type: "POST",
+          url: "https://api.futureapp.in/contributor_form",
+          data: formData,
+          dataType: "json",
+          encode: true,
+        }).done(function (data) {
+          console.log(data);
+          window.location = "/thanks/";
+          $(".message-submit").addClass(show-messsage);
+        });
+        event.preventDefault();
+    });
+
+
+
 
     $('body').scrollspy({ target: '.header-area', offset:50 });
 

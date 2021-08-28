@@ -24,7 +24,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Future App" />
 <script type="application/ld+json">
-{"url":"/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/logo.png"}},"headline":"Future App","name":"Future App","description":"Connecting schools and parents via technology to make your child’s future. FutureApp allows parents to stay updated about their kids progress. At the same time it helps school management to make routine work automated and easy","@type":"WebSite","@context":"https://schema.org"}</script>
+{"headline":"Future App","url":"/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/logo.png"}},"name":"Future App","description":"Connecting schools and parents via technology to make your child’s future. FutureApp allows parents to stay updated about their kids progress. At the same time it helps school management to make routine work automated and easy","@type":"WebSite","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -1279,6 +1279,32 @@ $(document).ready(function(){
         });
         event.preventDefault();
     });
+
+
+    
+    $(".sponserform").submit(function (event) {
+        var formData = {
+          name: $("#name").val(),
+          email: $("#email").val(),
+          phone_number: $("#phone_number").val(),
+          address: $("#address").val(),
+          description: $("#description").val()
+        };
+
+        $.ajax({
+          type: "POST",
+          url: "https://api.futureapp.in/contributor_form",
+          data: formData,
+          dataType: "json",
+          encode: true,
+        }).done(function (data) {
+          console.log(data);
+          window.location = "/thanks/";
+          $(".message-submit").addClass(show-messsage);
+        });
+        event.preventDefault();
+    });
+
 
 
 
