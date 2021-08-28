@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Soponsers
+title: Sponsors
 description: 
 hero:
   title: form title 
